@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project label="[User Define Project]">
+<projectType>customize</projectType>
+<frame></frame>
+<nature></nature>
+<configurations>
+<configuration name="x86Gnu4.12le">
+<arch value="x86"/>
+<isSetOutput/>
+<outputPath/>
+</configuration>
+</configurations>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="converted.config.554970160">
+			<storageModule moduleId="com.coretek.tools.ide.core.pathentry">
+				<pathentry kind="src" path=""/>
+				<pathentry kind="out" path=""/>
+				<pathentry kind="con" path="com.coretek.tools.ide.managedbuilder.MANAGED_CONTAINER"/>
+			</storageModule>
+			<storageModule buildSystemId="org.eclipse.cdt.core.defaultConfigDataProvider" id="converted.config.554970160" moduleId="org.eclipse.cdt.core.settings" name="convertedConfig">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.coretek.tools.ide.core.PE" point="com.coretek.tools.ide.core.BinaryParser"/>
+					<extension id="com.coretek.tools.ide.core.ELF" point="com.coretek.tools.ide.core.BinaryParser"/>
+					<extension id="com.coretek.tools.ide.core.GNU_ELF" point="com.coretek.tools.ide.core.BinaryParser"/>
+					<extension id="com.coretek.tools.ide.core.LAMBDA" point="com.coretek.tools.ide.core.BinaryParser"/>
+					<extension id="com.coretek.tools.ide.core.Hex" point="com.coretek.tools.ide.core.BinaryParser"/>
+					<extension id="com.coretek.tools.ide.core.Srec" point="com.coretek.tools.ide.core.BinaryParser"/>
+					<extension id="com.coretek.tools.ide.core.Bin" point="com.coretek.tools.ide.core.BinaryParser"/>
+					<extension id="com.coretek.tools.ide.managedbuilder.core.ManagedBuildManager" point="com.coretek.tools.ide.core.ScannerInfoProvider"/>
+					<extension id="com.coretek.tools.ide.managedbuilder.core.ManagedBuildManager" point="com.coretek.tools.ide.core.ScannerInfoProvider"/>
+					<extension id="com.coretek.tools.ide.core.nullindexer" point="com.coretek.tools.ide.core.CIndexer"/>
+				</extensions>
+			</storageModule>
+		</cconfiguration>
+	</storageModule>
+</cproject>

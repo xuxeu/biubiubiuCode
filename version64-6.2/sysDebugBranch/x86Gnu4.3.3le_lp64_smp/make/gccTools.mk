@@ -1,0 +1,14 @@
+GCC_AS	=aspentium
+GCC_LD	=ldpentium
+GCC_CC	=ccpentium
+GCC_AR	=arpentium
+GCC_NM	=nmpentium
+GCC_STRIP	=strippentium
+GCC_OBJDUMP	=objdumppentium
+GCC_OBJCOPY =objcopypentium
+GCC_RANLIB =ranlibpentium
+GCC_READELF =readelfpentium
+GCC_STRINGS =stringspentium
+GCC_SIZE =sizepentium
+GCC_ADDR2LINE =addr2linepentium
+GCC_CCC =c++pentium

@@ -1,0 +1,52 @@
+/* memory-config in eclipse by lwj*/
+/*8 May 2006 09:22:47 GMT*/
+
+ENTRY(_start)
+
+MEMORY 
+{
+high_ram	:	ORIGIN = 0x00100000,	LENGTH = 0x4f000
+}
+
+SECTIONS	{
+
+.text   ((0x00100000 + 16-1)/ 16*16)   :
+{
+".text_start" = .;
+. = ALIGN(0x00000004);
+text_start = .;
+
+ _code_start = 0x00100000;
+     . = ALIGN (16);
+      CREATE_OBJECT_SYMBOLS;
+      *(.text);
+      *(.rodata);
+      *(.data);
+         *(.eh_frame);
+     *(.rodata.str1.1);
+     *(.rodata.str1.4);
+         _code_end = .;
+     ;
+text_end = .;
+}	>high_ram
+.text_size = SIZEOF(.text);
+
+.bss   ((0x00100000 + ".text_size" + 16-1)/ 16*16)   :
+{
+".bss_start" = .;
+  . = ALIGN(0x00000004);
+  *(.netSection);
+ . = ALIGN (16);
+   _bss_start = .;
+   *(COMMON);
+   *(.bss);
+   _bss_end = ALIGN (16);
+  _stack_top =( _bss_end + 0x2000 + 0x8000 + (0x00000004-1))& ~ (0x00000004-1);
+  _init_stack_size = 0x8000;
+  _tra_end = _stack_top + 0x10;
+  _tra_start = 0x000000;
+    ;
+}	>high_ram
+
+}
+

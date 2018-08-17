@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<!--<board name="loongson2f_pc" arch="mips" subarch="loongson2f_pc">
+		<communication>
+			<net exist="yes" reconfigmac="no">
+				<netCardName>INTEL8254X</netCardName>
+			</net>
+			<uart exist="no">
+				<devicename>COM1:COM2</devicename>
+				<buad>115200:9600</buad>
+			</uart>
+		</communication>
+		<display type="vga"></display>
+		<isSupportSMP value="N"></isSupportSMP>
+	</board>
+	<board name="loongson2f_cpci" arch="mips" subarch="loongson2f_cpci">
+		<communication>
+			<net exist="yes" reconfigmac="no">
+				<netCardName>INTEL8254X</netCardName>
+			</net>
+			<uart exist="no">
+				<devicename></devicename>
+				<buad></buad>
+			</uart>
+		</communication>
+		<display type="vga"></display>
+		<isSupportSMP value="N"></isSupportSMP>
+	</board>
+	<board name="709_loongson2f" arch="mips" subarch="709_loongson2f">
+		<communication>
+			<net exist="yes" reconfigmac="no">
+				<netCardName>INTEL8254X</netCardName>
+			</net>
+			<uart exist="no">
+				<devicename>COM1:COM2</devicename>
+				<buad>115200:9600</buad>
+			</uart>
+		</communication>
+		<display type="vga"></display>
+		<isSupportSMP value="N"></isSupportSMP>
+	</board>
+	<board name="716_loongson2f" arch="mips" subarch="716_loongson2f">
+		<communication>
+			<net exist="yes" reconfigmac="no">
+				<netCardName>INTEL8254X</netCardName>
+			</net>
+			<uart exist="no">
+				<devicename>COM1:COM2</devicename>
+				<buad>115200:9600</buad>
+			</uart>
+		</communication>
+		<display type="vga"></display>
+		<isSupportSMP value="N"></isSupportSMP>
+	</board>-->
+	<board name="pcpentium2hard" arch="x86" subarch="pentium4">
+		<communication>
+			<net exist="yes" reconfigmac="no">
+				<netCardName>RTL8139</netCardName>
+				<netCardName>INTEL8254X</netCardName>
+				<netCardName>LN97</netCardName>
+			</net>
+			<uart exist="no">
+				<devicename></devicename>
+				<buad></buad>
+			</uart>
+		</communication>
+		<display type="vga"></display>
+		<isSupportSMP value="Y"></isSupportSMP>
+	</board>
+</configuration>

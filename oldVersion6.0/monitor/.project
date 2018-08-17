@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>monitor</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.coretek.tools.ide.managedbuilder.core.genlinkbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.coretek.tools.ide.managedbuilder.core.genmakebuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.coretek.tools.ide.core.cnature</nature>
+		<nature>com.coretek.tools.ide.managedbuilder.core.managedBuildNature</nature>
+	</natures>
+</projectDescription>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project label="[User Define Project]">
+<osType>deltaos6.0</osType>
+<projectType>customize</projectType>
+<frame></frame>
+<nature></nature>
+<adaptVersion>6.8</adaptVersion>
+<configurations>
+<configuration name="x86Gnu4.12le">
+<arch value="x86"/>
+<isSetOutput value="N"/>
+<outputPath value="D:/platfrom_he/deltaos6.0/target/lib/gnu4.1.2/x86/pentium4/little"/>
+<isLp64 value="N"/>
+<cpu value="pentium4"/>
+<toolChain value="4.1.2"/>
+</configuration>
+<configuration name="mipsGnu4.12le">
+<arch value="mips"/>
+<isSetOutput value="N"/>
+<outputPath value="D:/platfrom_he/deltaos6.0/target/lib/gnu4.1.2/mips/loongson3a/little"/>
+<isLp64 value="N"/>
+<cpu value="loongson3a"/>
+<toolChain value="4.1.2"/>
+</configuration>
+</configurations>
+</project>

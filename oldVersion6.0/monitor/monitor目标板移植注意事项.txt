@@ -1,0 +1,22 @@
+1.目标板相关的代码放在src/board/$(ARCH)/$(BOARD)目录中,其中$(ARCH)表示目标板的体系结构，$(BOARD)表示目标板的名字(以目标板名字建立文件夹的时候需要注意，需要符合C语言的宏定义的规则，因为IDE在生成配置文件的时候会根据目标板的名字来生成配置数据)。
+
+2.在src/include/monitorBoardInc.h文件中添加目标板相关的头文件，这些头文件用于提供目标板特定的函数声明。添加方式如下：
+#ifdef CONFIG_LOONGSON2F_PC
+#include "taLson2fvga.h"
+#include "taIntel8254x.h"
+#endif
+
+CONFIG_LOONGSON2F_PC由IDE生成，命名规则是CONFIG_ + 目标板名。（对于存储驱动的目标板目录名$(BOARD)可以有大小写，系统在生成目标板配置的宏时会自动将所有小写转换成大写。）
+
+3.在文件boardconfiguration.xml中添加目标板的配置信息，这些配置信息包括目标板是否支持串口或者网络通信，显示设备是串口或者vga显示器。这个配置文件主要是用于辅助IDE为用户生成合理的配置界面。注释如下：
+
+	<board name="loongson2f_pc"><!--name中的名字与目标板目录名保持一致，包括大小写-->
+		<communication>
+			<net exist="yes" reconfigmac="no"></net><!--exist="yes",表示支持网络通信，reconfigmac="no"表示不需要配置mac地址，如果需要配置mac地址则把no修改成yes-->
+			<uart exist="yes">
+				<devicename>COM1:COM2</devicename>
+				<buad>115200:9600</buad><!--串口波特率，驱动支持的所有波特率用冒号隔开-->
+			</uart>
+		</communication>
+		<display type="vga"></display><!--如果通过串口显示，则将vga修改成uart-->
+	</board>
