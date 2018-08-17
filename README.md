@@ -7,4 +7,4 @@ x86 and mips for connect and debug
 
 老版本的6.0：http://192.168.11.24/svn/工具
 
-最新版本的
+最新版本的6.0:
