@@ -497,15 +497,15 @@ static T_TA_ReturnCode LoadModule(T_DB_Info* debugInfo,
 
     /* 设置数据段信息，SEG_FREE_MEMORY表示删除段时释放该段内存 */
     moduleInfo.segment[1].address = dataAdd;
-    moduleInfo.segment[1].size = dataAdd;
+    moduleInfo.segment[1].size = dataSize;
     moduleInfo.segment[1].type = SEGMENT_DATA;
-    moduleInfo.segment[1].flags = SEG_FREE_MEMORY;
+    moduleInfo.segment[1].flags = 0;/*如果该处还是SEG_FREE_MEMORY话，系统在释放内存时，还会调用释放函数，而我们只是调用了一次申请空间函数*/
 
     /* 设置BSS段信息，SEG_FREE_MEMORY表示删除段时释放该段内存 */
     moduleInfo.segment[2].address = bssAdd;
     moduleInfo.segment[2].size = bssSize;
     moduleInfo.segment[2].type = SEGMENT_BSS;
-    moduleInfo.segment[2].flags = SEG_FREE_MEMORY;
+    moduleInfo.segment[2].flags = 0;
 
     /* 加载模块 */
     status = mdlLoadModule(&moduleInfo, &moduleId);

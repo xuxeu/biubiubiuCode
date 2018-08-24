@@ -51,7 +51,7 @@ int shellInitialize(void)
 
 int shellServer(int port)
 {
-	shellAcceptor(port, 1460, 8000, 0);
+	shellAcceptor(port, 44600, 8000, 0);
 
 	/* 恢复到shell server未初始化的状态 */
 	shellServerInitialized = FALSE;
@@ -107,7 +107,7 @@ void shellAcceptor(int port, int size, int blen, int zbuf)
 			close(snew);
 			return;
 		}
-
+		
 		shellGenericInit(NULL, size, NULL, NULL, TRUE, FALSE, snew, snew, snew);
 	}
 

@@ -73,6 +73,7 @@ T_TA_ReturnCode taDebugWriteMemory(UINT32 ctxId, UINT32 desAddr, const UINT8 *sr
     {
         /* 调用内存操作表的写内存函数 */
         ret = taCurrOperTable.WriteMemory(ctxId, desAddr, srcAddr, size,align);
+
 		if (ret != TA_OK)
 		{
 			ret = TA_FAIL;

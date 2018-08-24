@@ -160,9 +160,11 @@ T_TA_ReturnCode taDirectWriteMemory(UINT32 ctxId, UINT32 dest, const UINT8 *src,
         return (TA_INVALID_PARAM);
     }
 
+
     /* 测试内存是否可访问 */
     if (TA_OK != taMemTest((char*)dest, size, TA_WRITE, align))
     {
+
     	return (TA_INVALID_PARAM);
     }
 

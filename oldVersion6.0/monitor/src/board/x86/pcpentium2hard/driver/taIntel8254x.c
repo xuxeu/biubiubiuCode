@@ -71,7 +71,6 @@ T_EXTERN T_WORD cacheLsn2ePipeFlush (T_VOID);
 #define INTEL_DEVICEID_82573V_PM           0x10B2
 #define INTEL_DEVICEID_82573E_PM           0x10B3
 #define INTEL_DEVICEID_82573L_PL2          0x10B4
-
 #define CONFIG_CMD(bus, device_fn, where)   (0x80000000 | (bus << 16) | (device_fn << 8) | (where & ~3))
 
 int pciConfigOutByte
