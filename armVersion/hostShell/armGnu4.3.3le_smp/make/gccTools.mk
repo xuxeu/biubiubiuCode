@@ -1,0 +1,14 @@
+GCC_AS	=dcore-as-arm
+GCC_LD	=dcore-ld-arm
+GCC_CC	=ccarm
+GCC_AR	=dcore-ar-arm
+GCC_NM	=dcore-nm-arm
+GCC_STRIP	=dcore-strip-arm
+GCC_OBJDUMP	=dcore-objdump-arm
+GCC_OBJCOPY =dcore-objcopy-arm
+GCC_RANLIB =dcore-ranlib-arm
+GCC_READELF =dcore-readelf-arm
+GCC_STRINGS =dcore-strings-arm
+GCC_SIZE =dcore-size-arm
+GCC_ADDR2LINE =dcore-addr2line-arm
+GCC_CCC =dcore-c++-arm
