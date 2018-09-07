@@ -1,0 +1,14 @@
+GCC_AS	=dcore-as-x86
+GCC_LD	=dcore-ld-x86
+GCC_CC	=dcore-gcc-x86
+GCC_AR	=dcore-ar-x86
+GCC_NM	=dcore-nm-x86
+GCC_STRIP	=dcore-strip-x86
+GCC_OBJDUMP	=dcore-objdump-x86
+GCC_OBJCOPY =dcore-objcopy-x86
+GCC_RANLIB =dcore-ranlib-x86
+GCC_READELF =dcore-readelf-x86
+GCC_STRINGS =dcore-strings-x86
+GCC_SIZE =dcore-size-x86
+GCC_ADDR2LINE =dcore-addr2line-x86
+GCC_CCC =dcore-c++-x86
