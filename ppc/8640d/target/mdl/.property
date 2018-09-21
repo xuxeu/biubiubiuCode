@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project label="[User Define Project]">
+<projectType>customize</projectType>
+<frame></frame>
+<nature></nature>
+<configurations>
+<configuration name="ppcGnu4.12">
+<arch value="ppc"/>
+<isSetOutput value="N"/>
+<outputPath value="E:/LambdaPRO_ppc_20141223/target/deltaos/lib/x86/pentium/little"/>
+</configuration>
+<configuration name="x86Gnu4.12le">
+<arch value="x86"/>
+<isSetOutput value="N"/>
+<outputPath value="E:/LambdaPRO_ppc_20141223/target/deltaos/lib/x86/pentium/little"/>
+</configuration>
+<configuration name="mipsGnu4.12le">
+<arch value="mips"/>
+<isSetOutput value="N"/>
+<outputPath value="E:/LambdaPRO_ppc_20141223/target/deltaos/lib/x86/pentium/little"/>
+</configuration>
+</configurations>
+</project>

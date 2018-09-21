@@ -1,0 +1,103 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "targetServer", "targetServer\targetServer.vcproj", "{79A49402-42FA-4AF0-8139-DD8EC26D57BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D1B4735-4EC7-4173-92EC-0BB3CF808CC5} = {1D1B4735-4EC7-4173-92EC-0BB3CF808CC5}
+		{DB487512-8D32-4118-99CE-842ABBE82CD5} = {DB487512-8D32-4118-99CE-842ABBE82CD5}
+		{A87B7D05-9A98-4201-AC2F-B9D2BBB82D47} = {A87B7D05-9A98-4201-AC2F-B9D2BBB82D47}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TsApi", "tsApi\tsApi.vcproj", "{DB487512-8D32-4118-99CE-842ABBE82CD5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D1B4735-4EC7-4173-92EC-0BB3CF808CC5} = {1D1B4735-4EC7-4173-92EC-0BB3CF808CC5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TraServer", "traServer\traServer.vcproj", "{A87B7D05-9A98-4201-AC2F-B9D2BBB82D47}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D1B4735-4EC7-4173-92EC-0BB3CF808CC5} = {1D1B4735-4EC7-4173-92EC-0BB3CF808CC5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TmBase", "TmBase\TMBase.vcproj", "{1D1B4735-4EC7-4173-92EC-0BB3CF808CC5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tsmap", "tsmap\tsmap.vcproj", "{59980BC8-F1F8-4699-A34E-7CA92871F04E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D1B4735-4EC7-4173-92EC-0BB3CF808CC5} = {1D1B4735-4EC7-4173-92EC-0BB3CF808CC5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tsfsServer", "tsfsServer\tsfsServer.vcproj", "{79355863-2D28-40FA-A70D-3EB541B25203}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DB487512-8D32-4118-99CE-842ABBE82CD5} = {DB487512-8D32-4118-99CE-842ABBE82CD5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ucServer", "ucServer\ucServer.vcproj", "{4493CF96-1550-46D3-8A98-BFD5D2BB57AA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DB487512-8D32-4118-99CE-842ABBE82CD5} = {DB487512-8D32-4118-99CE-842ABBE82CD5}
+		{1D1B4735-4EC7-4173-92EC-0BB3CF808CC5} = {1D1B4735-4EC7-4173-92EC-0BB3CF808CC5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tsServer", "tsServer\TSServer.vcproj", "{A88AA7CF-C902-4CAE-BB0E-D339FE7FD72E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DB487512-8D32-4118-99CE-842ABBE82CD5} = {DB487512-8D32-4118-99CE-842ABBE82CD5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tssymman", "tssymman\tssymman.vcproj", "{0D7401B0-7AE7-41E6-A88B-DEB9BB85B599}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D1B4735-4EC7-4173-92EC-0BB3CF808CC5} = {1D1B4735-4EC7-4173-92EC-0BB3CF808CC5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shell", "shell\shell.vcproj", "{81740FA3-1418-4D9A-96D5-25BA60B8E934}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DB487512-8D32-4118-99CE-842ABBE82CD5} = {DB487512-8D32-4118-99CE-842ABBE82CD5}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79A49402-42FA-4AF0-8139-DD8EC26D57BF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79A49402-42FA-4AF0-8139-DD8EC26D57BF}.Debug|Win32.Build.0 = Debug|Win32
+		{79A49402-42FA-4AF0-8139-DD8EC26D57BF}.Release|Win32.ActiveCfg = Release|Win32
+		{79A49402-42FA-4AF0-8139-DD8EC26D57BF}.Release|Win32.Build.0 = Release|Win32
+		{DB487512-8D32-4118-99CE-842ABBE82CD5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DB487512-8D32-4118-99CE-842ABBE82CD5}.Debug|Win32.Build.0 = Debug|Win32
+		{DB487512-8D32-4118-99CE-842ABBE82CD5}.Release|Win32.ActiveCfg = Release|Win32
+		{DB487512-8D32-4118-99CE-842ABBE82CD5}.Release|Win32.Build.0 = Release|Win32
+		{A87B7D05-9A98-4201-AC2F-B9D2BBB82D47}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A87B7D05-9A98-4201-AC2F-B9D2BBB82D47}.Debug|Win32.Build.0 = Debug|Win32
+		{A87B7D05-9A98-4201-AC2F-B9D2BBB82D47}.Release|Win32.ActiveCfg = Release|Win32
+		{A87B7D05-9A98-4201-AC2F-B9D2BBB82D47}.Release|Win32.Build.0 = Release|Win32
+		{1D1B4735-4EC7-4173-92EC-0BB3CF808CC5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D1B4735-4EC7-4173-92EC-0BB3CF808CC5}.Debug|Win32.Build.0 = Debug|Win32
+		{1D1B4735-4EC7-4173-92EC-0BB3CF808CC5}.Release|Win32.ActiveCfg = Release|Win32
+		{1D1B4735-4EC7-4173-92EC-0BB3CF808CC5}.Release|Win32.Build.0 = Release|Win32
+		{59980BC8-F1F8-4699-A34E-7CA92871F04E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{59980BC8-F1F8-4699-A34E-7CA92871F04E}.Debug|Win32.Build.0 = Debug|Win32
+		{59980BC8-F1F8-4699-A34E-7CA92871F04E}.Release|Win32.ActiveCfg = Release|Win32
+		{59980BC8-F1F8-4699-A34E-7CA92871F04E}.Release|Win32.Build.0 = Release|Win32
+		{79355863-2D28-40FA-A70D-3EB541B25203}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79355863-2D28-40FA-A70D-3EB541B25203}.Debug|Win32.Build.0 = Debug|Win32
+		{79355863-2D28-40FA-A70D-3EB541B25203}.Release|Win32.ActiveCfg = Release|Win32
+		{79355863-2D28-40FA-A70D-3EB541B25203}.Release|Win32.Build.0 = Release|Win32
+		{4493CF96-1550-46D3-8A98-BFD5D2BB57AA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4493CF96-1550-46D3-8A98-BFD5D2BB57AA}.Debug|Win32.Build.0 = Debug|Win32
+		{4493CF96-1550-46D3-8A98-BFD5D2BB57AA}.Release|Win32.ActiveCfg = Release|Win32
+		{4493CF96-1550-46D3-8A98-BFD5D2BB57AA}.Release|Win32.Build.0 = Release|Win32
+		{A88AA7CF-C902-4CAE-BB0E-D339FE7FD72E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A88AA7CF-C902-4CAE-BB0E-D339FE7FD72E}.Debug|Win32.Build.0 = Debug|Win32
+		{A88AA7CF-C902-4CAE-BB0E-D339FE7FD72E}.Release|Win32.ActiveCfg = Release|Win32
+		{A88AA7CF-C902-4CAE-BB0E-D339FE7FD72E}.Release|Win32.Build.0 = Release|Win32
+		{0D7401B0-7AE7-41E6-A88B-DEB9BB85B599}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0D7401B0-7AE7-41E6-A88B-DEB9BB85B599}.Debug|Win32.Build.0 = Debug|Win32
+		{0D7401B0-7AE7-41E6-A88B-DEB9BB85B599}.Release|Win32.ActiveCfg = Release|Win32
+		{0D7401B0-7AE7-41E6-A88B-DEB9BB85B599}.Release|Win32.Build.0 = Release|Win32
+		{81740FA3-1418-4D9A-96D5-25BA60B8E934}.Debug|Win32.ActiveCfg = Debug|Win32
+		{81740FA3-1418-4D9A-96D5-25BA60B8E934}.Debug|Win32.Build.0 = Debug|Win32
+		{81740FA3-1418-4D9A-96D5-25BA60B8E934}.Release|Win32.ActiveCfg = Release|Win32
+		{81740FA3-1418-4D9A-96D5-25BA60B8E934}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

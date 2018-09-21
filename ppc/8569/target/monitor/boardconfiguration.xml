@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<board name="loongson3a780eIn" arch="mips" subarch="loongson3a">
+		<communication>
+			<net exist="yes" reconfigmac="no">
+				<netCardName>INTEL8254X</netCardName>
+				<netCardName>8111D</netCardName>
+			</net>
+			<uart exist="no">
+				<devicename></devicename>
+				<buad></buad>
+			</uart>
+		</communication>
+		<display type="vga"></display>
+		<isSupportSMP value="Y"></isSupportSMP>
+	</board>
+	<board name="pcpentium2hard" arch="x86" subarch="pentium4">
+		<communication>
+			<net exist="yes" reconfigmac="no">
+				<netCardName>RTL8139</netCardName>
+				<netCardName>INTEL8254X</netCardName>
+				<netCardName>LN97</netCardName>
+			</net>
+			<uart exist="no">
+				<devicename></devicename>
+				<buad></buad>
+			</uart>
+		</communication>
+		<display type="vga"></display>
+		<isSupportSMP value="Y"></isSupportSMP>
+	</board>
+	<board name="PowerPC_CPPE_1C1" arch="ppc" subarch="8640D">
+		<communication>
+			<net exist="yes" reconfigmac="no">
+				<netCardName>8640d</netCardName>
+			</net>
+			<uart exist="no">
+				<devicename></devicename>
+				<buad></buad>
+			</uart>
+		</communication>
+		<display type="uart">
+			<devicename>com1</devicename>
+			<buad>115200</buad>
+		</display>
+		<isSupportSMP value="Y"></isSupportSMP>
+	</board>
+	<board name="PowerPC_CPPCAB_0C1" arch="ppc" subarch="8640D">
+		<communication>
+			<net exist="yes" reconfigmac="no">
+				<netCardName>TSEC</netCardName>
+			</net>
+			<uart exist="no">
+				<devicename></devicename>
+				<buad></buad>
+			</uart>
+		</communication>
+		<display type="uart">
+			<devicename>com1</devicename>
+			<buad>115200</buad>
+		</display>
+		<isSupportSMP value="Y"></isSupportSMP>
+	</board>
+		<board name="PowerPC_8569_722s" arch="ppc" subarch="8569">
+		<communication>
+			<net exist="yes" reconfigmac="no">
+				<netCardName>QEFCC</netCardName>
+			</net>
+			<uart exist="no">
+				<devicename></devicename>
+				<buad></buad>
+			</uart>
+		</communication>
+		<display type="uart">
+			<devicename>com1</devicename>
+			<buad>115200</buad>
+		</display>
+		<isSupportSMP value="Y"></isSupportSMP>
+	</board>
+</configuration>

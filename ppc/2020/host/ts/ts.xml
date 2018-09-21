@@ -1,0 +1,15 @@
+<!DOCTYPE TS>
+<TS>
+    <ListenConfig port="8000">
+    </ListenConfig>
+    <SystemLogConfig currentLevel="1">
+    </SystemLogConfig>
+    <permanentServerAgent>
+        <psa name="tsmap" dllName="tsmap.dll" logFlag="0" extInfo="1">
+        </psa>
+    </permanentServerAgent>
+    <permanentServerAgent>
+        <psa name="tsServerMap" dllName="tssymman.dll" logFlag="0" extInfo="1">
+        </psa>
+    </permanentServerAgent>
+</TS>

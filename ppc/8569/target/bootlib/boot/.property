@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project label="[Static Kernel Library Project]">
+<projectType>library</projectType>
+<frame></frame>
+<nature></nature>
+<configurations>
+<configuration name="ppcGnu4.12">
+<arch value="ppc"/>
+<isSetOutput value="N"/>
+<outputPath value="C:/LambdaPRO/target/deltaos/lib/x86/pentium/little"/>
+</configuration>
+</configurations>
+</project>

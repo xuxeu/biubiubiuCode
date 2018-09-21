@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<!--mipsgnu4.12-->
+		<!--ppcgnu4.12-->
+		<cconfiguration id="com.coretek.tools.ide.project.deltaos.debug.static.630731761">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.coretek.tools.ide.project.deltaos.debug.static.630731761" moduleId="org.eclipse.cdt.core.settings" name="ppcGnu4.12">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.coretek.tools.ide.project.deltaos.debug.static.630731761" name="ppcGnu4.12" parent="com.coretek.tools.ide.project.deltaos.debug.static">
+					<folderInfo id="com.coretek.tools.ide.project.deltaos.debug.static.630731761." name="/" resourcePath="">
+						<toolChain id="com.coretek.tools.ide.project.deltaos.debug.toolChain.static.784156923" name="GCC 4.1.2" superClass="com.coretek.tools.ide.project.deltaos.debug.toolChain.static">
+							<targetPlatform id="com.coretek.tools.ide.project.deltaos.targetPlatform.gnu412.static.1567786192" name="Debug Platform" superClass="com.coretek.tools.ide.project.deltaos.targetPlatform.gnu412.static"/>
+							<builder buildPath="${workspace_loc:/imageDeltaos/default}" id="com.coretek.tools.ide.project.deltaos.builder.gnu412.static.432241241" keepEnvironmentInBuildfile="false" name="Gnu Make 构建" superClass="com.coretek.tools.ide.project.deltaos.builder.gnu412.static"/>
+							<tool id="com.coretek.tools.ide.project.deltaos.archiver.gnu412.static.1640994093" name="GCC 档案文件" superClass="com.coretek.tools.ide.project.deltaos.archiver.gnu412.static"/>
+							<tool id="com.coretek.tools.ide.project.deltaos.cpp.compiler.gnu412.static.1553857334" name="GCC C++ 编译器" superClass="com.coretek.tools.ide.project.deltaos.cpp.compiler.gnu412.static">
+								<option id="gnu.cpp.compiler.option.optimization.level.1026902864" name="优化级别" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.923139231" name="调试级别" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.default" valueType="enumerated"/>
+							</tool>
+							<tool id="com.coretek.tools.ide.project.deltaos.c.compiler.gnu412.static.1258248532" name="GCC C 编译器" superClass="com.coretek.tools.ide.project.deltaos.c.compiler.gnu412.static">
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.960910952" name="优化级别" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1461801244" name="调试级别" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.default" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.760061704" name="包含文件搜索路径 (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="%ProjectRoot%"/>
+									<listOptionValue builtIn="false" value="./"/>
+									<listOptionValue builtIn="false" value="../"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/config/include"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot/net"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot/vxworks/private"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot/debug"/>
+									<listOptionValue builtIn="false" value="%ProjectRoot%/src"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot/arch/ppc"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot/vxworks/wrn/coreip"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot/vxworks/hwif"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/comps/src/src-boot"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/src/src-boot"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot/debug"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot/debug/ppc"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot/vxworks"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot/vxworks/ugl"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot/rtl"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/include-boot/DeltaCore"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1977865404" name="定义宏 (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CPU=PPC85XX"/>
+								</option>
+								<option id="gnu.c.compiler.option.misc.other.1592721173" name="其它标记" superClass="gnu.c.compiler.option.misc.other" value="-c -mfloat-gprs=double -mspe=yes -mabi=spe -fno-implicit-fp" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.447781155" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+								<inputType id="com.coretek.tools.ide.managedbuilder.core.inputType.gnu412.963055455" superClass="com.coretek.tools.ide.managedbuilder.core.inputType.gnu412"/>
+							</tool>
+							<tool id="com.coretek.tools.ide.project.deltaos.c.linker.gnu412.static.885552546" name="GCC C 链接器" superClass="com.coretek.tools.ide.project.deltaos.c.linker.gnu412.static">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1606677828" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.coretek.tools.ide.project.deltaos.cpp.linker.gnu412.static.1931820693" name="GCC C++ 链接器" superClass="com.coretek.tools.ide.project.deltaos.cpp.linker.gnu412.static"/>
+							<tool id="com.coretek.tools.ide.project.deltaos.assembler.gnu412.static.411043136" name="GCC 汇编程序" superClass="com.coretek.tools.ide.project.deltaos.assembler.gnu412.static">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1240149846" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="com.coretek.tools.ide.project.deltaos.debug.static.630731761.com.coretek.tools.ide.project.deltaos.debug.gnu412.static" resourcePath="com.coretek.tools.ide.project.deltaos.debug.gnu412.static">
+						<toolChain id="com.coretek.tools.ide.project.deltaos.debug.gnu412.static.1504064986" name="GCC 4.1.2" superClass="com.coretek.tools.ide.project.deltaos.debug.gnu412.static">
+							<targetPlatform id="com.coretek.tools.ide.project.deltaos.targetPlatform.gnu412.static.2078867194" name="Debug Platform" superClass="com.coretek.tools.ide.project.deltaos.targetPlatform.gnu412.static"/>
+							<tool id="com.coretek.tools.ide.project.deltaos.archiver.gnu412.static.1342727523" name="GCC 档案文件" superClass="com.coretek.tools.ide.project.deltaos.archiver.gnu412.static"/>
+							<tool id="com.coretek.tools.ide.project.deltaos.cpp.compiler.gnu412.static.527019980" name="GCC C++ 编译器" superClass="com.coretek.tools.ide.project.deltaos.cpp.compiler.gnu412.static">
+								<option id="gnu.cpp.compiler.option.optimization.level.536700018" name="优化级别" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1372747733" name="调试级别" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.default" valueType="enumerated"/>
+							</tool>
+							<tool id="com.coretek.tools.ide.project.deltaos.c.compiler.gnu412.static.1888878413" name="GCC C 编译器" superClass="com.coretek.tools.ide.project.deltaos.c.compiler.gnu412.static">
+								<option id="gnu.c.compiler.option.debugging.level.893106179" name="调试级别" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.default" valueType="enumerated"/>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1568763938" name="优化级别" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.760061704" name="包含文件搜索路径 (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="./"/>
+									<listOptionValue builtIn="false" value="../"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/config/include"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/net"/>
+									<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/vxworks"/>
+									<listOptionValue builtIn="false" value="%ProjectRoot%"/>
+									<listOptionValue builtIn="false" value="%ProjectRoot%/src"/>
+								</option>
+								<option id="gnu.c.compiler.option.misc.other.493165958" name="其它标记" superClass="gnu.c.compiler.option.misc.other" value="-c -mfloat-gprs=double -mspe=yes -mabi=spe -fno-implicit-fp" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.892989968" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+								<inputType id="com.coretek.tools.ide.managedbuilder.core.inputType.gnu412.2118726859" superClass="com.coretek.tools.ide.managedbuilder.core.inputType.gnu412"/>
+							</tool>
+							<tool id="com.coretek.tools.ide.project.deltaos.c.linker.gnu412.static.399831368" name="GCC C 链接器" superClass="com.coretek.tools.ide.project.deltaos.c.linker.gnu412.static"/>
+							<tool id="com.coretek.tools.ide.project.deltaos.cpp.linker.gnu412.static.1571428664" name="GCC C++ 链接器" superClass="com.coretek.tools.ide.project.deltaos.cpp.linker.gnu412.static"/>
+							<tool id="com.coretek.tools.ide.project.deltaos.assembler.gnu412.static.422445338" name="GCC 汇编程序" superClass="com.coretek.tools.ide.project.deltaos.assembler.gnu412.static">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1429770616" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="scannerConfiguration"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="imageDeltaosDemo.com.coretek.tools.ide.project.deltaos.projectType.static.2019851209" name="Executable" projectType="com.coretek.tools.ide.project.deltaos.projectType.static"/>
+	</storageModule>
+</cproject>

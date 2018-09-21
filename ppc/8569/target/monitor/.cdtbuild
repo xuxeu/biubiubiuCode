@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.0.0?>
+
+<ManagedProjectBuildInfo>
+<project id="monitor.cdt.managedbuild.target.gnu.device.general.696666772" name="生成项目" projectType="cdt.managedbuild.target.gnu.device.general" type="make">
+<configuration artifactExtension="a" artifactName="monitor" cleanCommand="rm -rf" errorParsers="com.coretek.tools.ide.core.MakeErrorParser;com.coretek.tools.ide.core.GCCErrorParser;com.coretek.tools.ide.core.GLDErrorParser;com.coretek.tools.ide.core.GASErrorParser" id="cdt.managedbuild.target.gnu.device.standard.generalConfiguration.141759047" name="x86Gnu2.96le" outputPath="" parent="cdt.managedbuild.target.gnu.device.standard.generalConfiguration" useDefalutToolsChain="yes">
+<toolChain id="cdt.managedbuild.toolchain.gnu.device.standard.pc386_001_tra_debug.1966269224" name="GCC工具系列" superClass="cdt.managedbuild.toolchain.gnu.device.standard.pc386_001_tra_debug">
+<tool id="cdt.managedbuild.tool.gnu.c.compiler.device.standard.debug.1006135458" name="GCC编译器" superClass="cdt.managedbuild.tool.gnu.c.compiler.device.standard.debug">
+<option id="gnu.c.compiler.option.include.paths.163055198" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="./"/>
+<listOptionValue builtIn="false" value="../"/>
+<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include"/>
+<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/config/include"/>
+<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/core"/>
+<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/gui"/>
+<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/fs"/>
+<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/net"/>
+<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/rtl"/>
+<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/vxworks"/>
+<listOptionValue builtIn="false" value="%ProjectRoot%"/>
+<listOptionValue builtIn="false" value="%ProjectRoot%/src"/>
+<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/bsps"/>
+<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/vxworks/ugl"/>
+<listOptionValue builtIn="false" value="%SystemRoot%/target/deltaos/include/debug"/>
+</option>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.device.standard.debug.912574967" name="GCC 编译器" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.device.standard.debug"/>
+<tool id="cdt.managedbuild.tool.gnu.archiver.device.standard.debug.1829594661" name="GCC归档器" superClass="cdt.managedbuild.tool.gnu.archiver.device.standard.debug"/>
+<tool id="cdt.managedbuild.tool.gnu.c.linker.device.standard.debug.28555940" name="GCC 链接器" superClass="cdt.managedbuild.tool.gnu.c.linker.device.standard.debug"/>
+<tool id="cdt.managedbuild.tool.gnu.cpp.linker.device.standard.debug.407299976" name="GCC 链接器" superClass="cdt.managedbuild.tool.gnu.cpp.linker.device.standard.debug"/>
+<tool id="cdt.managedbuild.tool.gnu.assembler.device.standard.debug.1816038917" name="GCC汇编器" superClass="cdt.managedbuild.tool.gnu.assembler.device.standard.debug"/>
+</toolChain>
+</configuration>
+</project>
+</ManagedProjectBuildInfo>
