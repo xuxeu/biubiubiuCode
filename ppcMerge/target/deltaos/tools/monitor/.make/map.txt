@@ -1,0 +1,987 @@
+Archive member included because of file (symbol)
+
+libtra.a(board.o)             crt0.o (lmain)
+libtra.a(taInit.o)            libtra.a(board.o) (sys_init)
+libtra.a(taInitConfig.o)      libtra.a(taInit.o) (taDebugDeviceInit)
+libtra.a(taOsIf.o)            libtra.a(taInit.o) (taBrigdeInit)
+libtra.a(taPrintk.o)          libtra.a(taInit.o) (taPrintChar)
+libtra.a(taUdpLib.o)          libtra.a(taInitConfig.o) (taUdpRead)
+libtra.a(taVectorFunc.o)      libtra.a(board.o) (_0x700Handle_start)
+libtra.a(ta_8569_uart.o)      libtra.a(taInit.o) (taDisplayDeviceOpen)
+libtra.a(ta_net.o)            libtra.a(taUdpLib.o) (taNetOpen)
+libtra.a(uec.o)               libtra.a(ta_net.o) (eth_send)
+libtra.a(uec_phy.o)           libtra.a(uec.o) (udelay)
+libtra.a(taCpuLib.o)          libtra.a(taInit.o) (taArchInit)
+libtra.a(taVector.o)          libtra.a(taCpuLib.o) (taInitVectorTable)
+libtra.a(archLib.o)           libtra.a(taCpuLib.o) (taArchInitializeBat)
+libtra.a(qe.o)                libtra.a(uec.o) (qe_issue_cmd)
+libtra.a(uccf.o)              libtra.a(uec.o) (ucc_fast_transmit_on_demand)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugInit.o)
+                              libtra.a(taInit.o) (taDebugInit)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDirectMemory.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugInit.o) (taDebugInitDirectMemory)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taExceptionReport.o)
+                              libtra.a(taOsIf.o) (taGetSaid)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaCpuLib.o)
+                              libtra.a(taOsIf.o) (sdaIpiHandler)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugInit.o) (taSDAInit)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbBreakpoint.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugInit.o) (taDebugBreakPointInit)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbMemory.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDirectMemory.o) (taDebugMemoryInit)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbStandardRsp.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugInit.o) (taDBInit)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taMemProbeLib.o)
+                              libtra.a(taOsIf.o) (taMemProbeInit)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtomArch.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbStandardRsp.o) (taDebugArchInit)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbHdBp.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbBreakpoint.o) (taDebugInsertHardBp)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbMemProbeLib.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taMemProbeLib.o) (taMemArchProbeInit)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taAgentEntry.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o) (taAgentEntry)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taCommand.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taAgentEntry.o) (taProcessCommand)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taPacketComm.o)
+                              libtra.a(taInitConfig.o) (taCOMMInit)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taPacketProtocol.o)
+                              libtra.a(taUdpLib.o) (taCheckSum)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taProtocol.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taPacketProtocol.o) (taTreatyAdd)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taManager.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taCommand.o) (taManagerCommandTable)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taMsgDispatch.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taAgentEntry.o) (taStopLoopDispatch)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taArchInfo.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taManager.o) (taArchInfoGet)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtomic.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaCpuLib.o) (_atomic_32_set)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDbgALib.o)
+                              libtra.a(taOsIf.o) (taBpExceptionStub)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taUtils.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taExceptionReport.o) (taHexChars)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugMode.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbStandardRsp.o) (taDebugModeGet)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taExceptionHandler.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o) (_func_taSysExceptionHandler)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaExceptionLib.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o) (taSDAExceptionHandler)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtom.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbStandardRsp.o) (taDebugReadAllRegisters)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbArchLib.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDbgALib.o) (taAachExceptionHandler)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDR.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbHdBp.o) (taDebugSetDataBreakpoint)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDRAsm.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDR.o) (taDebugSetDABR)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o)
+                              libtra.a(uec.o) (sprintf)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(floatfuncs.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o) (fformat)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memchr.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o) (memchr)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memcpy.o)
+                              libtra.a(board.o) (memcpy)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memset.o)
+                              libtra.a(uec.o) (memset)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(misc.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(floatfuncs.o) (fpTypeGet)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(modf.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(floatfuncs.o) (modf)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(printk.o)
+                              libtra.a(taInitConfig.o) (printk)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strchr.o)
+                              libtra.a(taUdpLib.o) (strchr)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strcmp.o)
+                              libtra.a(ta_8569_uart.o) (strcmp)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strcpy.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taManager.o) (strcpy)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strlen.o)
+                              libtra.a(uec.o) (strlen)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strncmp.o)
+                              libtra.a(uec.o) (strncmp)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strtoi.o)
+                              libtra.a(taUdpLib.o) (strtoi)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(bcopy.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o) (bcopy)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memmove.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(bcopy.o) (memmove)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__divdi3.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o) (__divdi3)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__moddi3.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o) (__moddi3)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__udivdi3.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o) (__udivdi3)
+D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__umoddi3.o)
+                              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o) (__umoddi3)
+
+Allocating common symbols
+Common symbol       size              file
+
+_Raw_Vector_table   0x400             libtra.a(taVector.o)
+taExceptionStackSize
+                    0x4               libtra.a(taVector.o)
+cpuThreadstatus     0x10              D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaCpuLib.o)
+gd                  0x4               libtra.a(qe.o)
+taExceptionStackTop
+                    0x4               libtra.a(taVector.o)
+taSDASmpExpContext  0x350             D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o)
+stepThreadId        0x4               D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaExceptionLib.o)
+taGdbGetExpContext  0x1a8             D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbStandardRsp.o)
+com2_ier            0x1               libtra.a(ta_8569_uart.o)
+com1_ier            0x1               libtra.a(ta_8569_uart.o)
+outputChar          0x4               D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(printk.o)
+taSDASessInfo       0x45c             D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o)
+gSaveNextPC         0x4               D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtomArch.o)
+expTmpStack         0xb0              libtra.a(taVector.o)
+taExceptionStack    0x1000            libtra.a(taVector.o)
+exceptionTwiceFlag  0x4               libtra.a(taVector.o)
+taSDAExpContext     0x8               D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o)
+taExceptionStackBottom
+                    0x4               libtra.a(taVector.o)
+_init_stack         0x8000            libtra.a(board.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x0e000000         0x02000000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00002000                .text_size = 0x2000
+                0x00002000                .data_size = 0x2000
+                0x0000a000                .bss_size = 0xa000
+                0x00000b14                .debug_line_size = 0xb14
+                0x000006c5                .debug_info_size = 0x6c5
+                0x0000011f                .debug_abbrev_size = 0x11f
+                0x00000040                .debug_aranges_size = 0x40
+                0x00000144                .comment_size = 0x144
+                0x00000058                .debug_pubnames_size = 0x58
+                0x0000001a                .debug_str_size = 0x1a
+
+.text           0x0e000000    0x1f000
+                0x0e000000                .text_start = .
+                0x0e000000                _code_start = .
+                0x0e000000                .__start_code = .
+ *(.vectors)
+ *(vectors1)
+ *(.__start)
+ *(.__ImageInfo)
+ CREATE_OBJECT_SYMBOLS
+ *(.text)
+ .text          0x0e000000       0x50 crt0.o
+                0x0e000000                _sysInit
+                0x0e000000                _start
+                0x0e00004c                _endsysInit
+ .text          0x0e000050       0x84 libtra.a(board.o)
+                0x0e0000ac                sysToMonitor
+                0x0e000050                lmain
+ .text          0x0e0000d4       0x5c libtra.a(taInit.o)
+                0x0e0000d4                sys_init
+ .text          0x0e000130      0x200 libtra.a(taInitConfig.o)
+                0x0e000130                taDebugDeviceInit
+                0x0e0001b0                taDisplayChannelInfo
+                0x0e000278                taDisplayStartedInfo
+ .text          0x0e000330      0x614 libtra.a(taOsIf.o)
+                0x0e0007bc                taSetEndToPoll
+                0x0e000624                taCpuEnabledGet
+                0x0e000330                taBrigdeInit
+                0x0e000834                taTaskActivate
+                0x0e00085c                taTaskCont
+                0x0e000884                intCpuLock
+                0x0e00043c                taTaskName
+                0x0e000524                taTaskIdListGet
+                0x0e000804                taGetTaskIdList
+                0x0e0007e0                taSetEndToInt
+                0x0e000704                taCacheTextUpdata
+                0x0e0004b4                taTaskIdSelf
+                0x0e0005a4                taTaskContextGet
+                0x0e000744                taTaskIdVerify
+                0x0e000694                taGetCpuID
+                0x0e0008a8                intCpuUnlock
+                0x0e0008c8                printUart
+ .text          0x0e000944       0x6c libtra.a(taPrintk.o)
+                0x0e000944                taPrintChar
+ .text          0x0e0009b0      0xebc libtra.a(taUdpLib.o)
+                0x0e00174c                taUDPInit
+                0x0e000c78                taUdpRead
+                0x0e001420                taUdpWrite
+ *fill*         0x0e00186c        0x4 00
+ .text          0x0e001870      0x35c libtra.a(taVectorFunc.o)
+                0x0e00198c                _0x700Handle_start
+                0x0e0019e0                _0x700Handle_end
+                0x0e001a1c                taRawGeneralExpAsmHandler
+                0x0e0019e0                kbspRawCacheInstUpdate
+                0x0e001a08                taAsmExceptionHandle
+ .text          0x0e001bcc      0xca8 libtra.a(ta_8569_uart.o)
+                0x0e002364                BSP_UartDisableSendOverInterrupt
+                0x0e001f3c                BSP_UartPollWrite
+                0x0e0025f0                BSP_UartLSRStatus
+                0x0e0025a4                BSP_UartGetVector
+                0x0e00278c                taDisplayDeviceOutputChar
+                0x0e0024ec                BSP_UartISRStatus
+                0x0e002100                BSP_UartReadOnce
+                0x0e002174                BSP_UartDisableReceiveInterrupt
+                0x0e00229c                BSP_UartEnableReceiveInterrupt
+                0x0e001ec8                BSP_UartClose
+                0x0e001bcc                BSP_UartGetDeviceNum
+                0x0e001bf0                BSP_UartInit
+                0x0e002424                BSP_UartEnableSendOverInterrupt
+                0x0e002008                BSP_UartPollRead
+                0x0e002234                BSP_UartInterruptRead
+                0x0e00268c                taDisplayDeviceOpen
+                0x0e002800                taDisplayDeviceOutputChar8640
+                0x0e0026cc                taDisplayDeviceOpen8640
+                0x0e002098                BSP_UartInterruptWrite
+ .text          0x0e002874      0x2cc libtra.a(ta_net.o)
+                0x0e002ad8                fnTA_net_enable_tx_int
+                0x0e002a68                fnTA_net_get_status
+                0x0e0028d4                fnTA_net_close
+                0x0e002b1c                fnTA_net_space_attribute_set
+                0x0e002a10                fnTA_net_get_isr
+                0x0e00297c                taNetPutpkt
+                0x0e0029c4                fnTA_net_isr
+                0x0e0028f0                taNetGetpkt
+                0x0e002af8                fnTA_net_get_rx_vector
+                0x0e002aa0                fnTA_net_enable_rx_int
+                0x0e002874                taNetOpen
+ .text          0x0e002b40     0x4174 libtra.a(uec.o)
+                0x0e002cb8                out_8
+                0x0e006874                eth_halt
+                0x0e006a48                eth_clear_rx_event
+                0x0e002e60                out_le32
+                0x0e006a90                get_eth_status
+                0x0e006c88                kbspRawNetGetRxVector
+                0x0e002b40                malloc
+                0x0e002e20                in_be32
+                0x0e0069ec                eth_enable_rx_int
+                0x0e0066cc                uec_standard_init
+                0x0e006b04                kbspRawNetOpen
+                0x0e002d30                in_be16
+                0x0e006ae0                eth_get_rx_status
+                0x0e002c78                in_8
+                0x0e006718                eth_initialize
+                0x0e006bfc                kbspRawNetPutpkt
+                0x0e002d70                out_le16
+                0x0e006b7c                kbspRawNetGetpkt
+                0x0e002da8                out_be16
+                0x0e006968                eth_rx
+                0x0e002e98                out_be32
+                0x0e002ddc                in_le32
+                0x0e0067f0                eth_init
+                0x0e006c44                kbspRawNetEnableRxInt
+                0x0e002cec                in_le16
+                0x0e006494                uec_initialize
+                0x0e0068e0                eth_send
+                0x0e00669c                uec_eth_init
+                0x0e002c58                free
+ .text          0x0e006cb4     0x1908 libtra.a(uec_phy.o)
+                0x0e00808c                phy_read
+                0x0e00818c                uec_get_phy_info
+                0x0e006f84                mii_configure_phy_interrupt
+                0x0e006e34                uec_read_phy_reg
+                0x0e006d3c                uec_write_phy_reg
+                0x0e006cb4                udelay
+                0x0e008594                change_phy_interface_mode
+                0x0e00830c                marvell_phy_interface_mode
+                0x0e006f28                mii_clear_phy_interrupt
+                0x0e008108                phy_write
+ .text          0x0e0085bc      0x24c libtra.a(taCpuLib.o)
+                0x0e0086e4                taCpuInterruptOpt
+                0x0e00878c                taArchInit
+                0x0e0087c0                CPU_FlushCaches
+                0x0e0085bc                taCpuInitialize
+                0x0e0085f0                taCpuInterruptDisable
+                0x0e008670                taCpuInterruptEnable
+ .text          0x0e008808      0x14c libtra.a(taVector.o)
+                0x0e00886c                taInstallVectorHandle
+                0x0e008808                taInitVectorTable
+                0x0e0088ec                taExceptionstackInit
+ *fill*         0x0e008954        0xc 00
+ .text          0x0e008960      0x20c libtra.a(archLib.o)
+                0x0e008980                _msl_arch_set_dbat2
+                0x0e008998                _msl_arch_set_ibat0
+                0x0e008aa4                taArchCacheInvalidateData
+                0x0e008960                _msl_arch_set_sdr1
+                0x0e0089f4                taArchEnableMMU
+                0x0e008a54                taArchCacheInvalidByhid0
+                0x0e00898c                _msl_arch_set_dbat3
+                0x0e008b50                taArchMMUIsEnabled
+                0x0e008974                _msl_arch_set_dbat1
+                0x0e008a38                taArchCacheGetHid0
+                0x0e008968                _msl_arch_set_dbat0
+                0x0e008a6c                taArchCacheFlush
+                0x0e008a84                tarchCacheFlushAll
+                0x0e008b40                taNullRawHandler
+                0x0e0089bc                _msl_arch_set_ibat3
+                0x0e0089d0                taArchInitializeBat
+                0x0e008a40                taArchCacheSetHid0
+                0x0e008b10                taArchSetSegmentContext
+                0x0e008ac0                taArchCacheInvalidateInst
+                0x0e008b00                taArchSetSysstack
+                0x0e0089a4                _msl_arch_set_ibat1
+                0x0e0089b0                _msl_arch_set_ibat2
+                0x0e008a14                taArchDisableMMU
+                0x0e008ad8                taArchCacheInvalidateInstdata
+                0x0e0089c8                _msl_arch_invalidate_tlb
+ .text          0x0e008b6c      0xde8 libtra.a(qe.o)
+                0x0e008c68                qe_muram_alloc
+                0x0e009024                qe_put_snum
+                0x0e008f6c                qe_get_snum
+                0x0e009908                qe_get_firmware_info
+                0x0e0090bc                qe_init
+                0x0e008b6c                qe_issue_cmd
+                0x0e00912c                qe_reset
+                0x0e009308                qe_set_mii_clk_src
+                0x0e00916c                qe_assign_page
+                0x0e008dec                qe_muram_addr
+                0x0e009214                qe_set_brg
+ .text          0x0e009954      0xf7c libtra.a(uccf.o)
+                0x0e00a374                ucc_fast_disable
+                0x0e009954                ucc_fast_transmit_on_demand
+                0x0e00a430                ucc_fast_init
+                0x0e0099a0                ucc_fast_get_qe_cr_subblock
+                0x0e00a2b8                ucc_fast_enable
+ .text          0x0e00a8d0       0x40 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugInit.o)
+                0x0e00a8d0                taDebugInit
+ .text          0x0e00a910      0x668 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDirectMemory.o)
+                0x0e00aec0                taDirectFlushCache
+                0x0e00acf0                taDirectReadMemory
+                0x0e00af04                taDebugInitDirectMemory
+                0x0e00ab20                taDirectWriteMemory
+ .text          0x0e00af78      0x59c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taExceptionReport.o)
+                0x0e00b460                taGetSaid
+                0x0e00b4b4                taSetCommunicateMode
+                0x0e00b2dc                taReportExceptionToDebugger
+                0x0e00b488                taSetSaid
+                0x0e00b4e0                taIgnoreSetEndToPoll
+                0x0e00b0c8                taSetExceptionStopReply
+                0x0e00af78                taSaveGdbPacketHead
+ .text          0x0e00b514      0xa1c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaCpuLib.o)
+                0x0e00b92c                IPI_Handle
+                0x0e00bdac                sdaCpuAllResume
+                0x0e00b6b4                sdaIpiEmit
+                0x0e00b5f0                sdaCpuCtrlEnable
+                0x0e00b678                sdaIpiHandler
+                0x0e00ba98                sdaCpuCtrlHandler
+                0x0e00b948                sdaIpiInit
+                0x0e00b54c                sdaGetCpuIdByThreadId
+                0x0e00bbb0                sdaCpuAllSuspend
+                0x0e00ba38                sdaCpuIsSuspended
+                0x0e00b7e0                sdaCpuCtrlLoop
+                0x0e00b634                sdaCpuCtrlDisable
+                0x0e00b514                GET_CPU_INDEX
+ .text          0x0e00bf30      0x3b4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o)
+                0x0e00c0f0                taSDAInit
+                0x0e00c0b4                taSDAExpContextPointerGet
+                0x0e00c08c                taSDADebugInfoGet
+ .text          0x0e00c2e4      0xe84 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbBreakpoint.o)
+                0x0e00cbe0                taDebugRemoveAllBp
+                0x0e00cca8                taDebugBpAllDisable
+                0x0e00c9e8                taDebugInsertSoftBp
+                0x0e00d0fc                taUpdateCacheBreakList
+                0x0e00cae8                taDebugRemoveSoftBp
+                0x0e00cf9c                taSyncBreakInfo
+                0x0e00cd64                taDebugBpAllEnable
+                0x0e00c4d0                taDebugInsertBP
+                0x0e00ceac                taDebugBpInstructCheck
+                0x0e00cf74                taGetBreakInfo
+                0x0e00c754                taDebugRemoveBP
+                0x0e00c2e4                taDebugBreakPointInit
+                0x0e00ce20                taIsSoftStepBreakPoint
+                0x0e00c3c8                taDebugLookUpBP
+ .text          0x0e00d168      0x220 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbMemory.o)
+                0x0e00d168                taDebugMemoryInit
+                0x0e00d31c                taDebugFlushCache
+                0x0e00d274                taDebugReadMemory
+                0x0e00d1cc                taDebugWriteMemory
+ .text          0x0e00d388     0x2000 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbStandardRsp.o)
+                0x0e00e294                RspReadSingleRegister
+                0x0e00d3c0                taDebugSetStopCommandTag
+                0x0e00d804                RspReadMemory
+                0x0e00ec40                RspSetThreadSubsequentOptHg
+                0x0e00e0bc                RspWriteAllRegister
+                0x0e00e1e0                RspReadAllRegister
+                0x0e00f0a0                RspThreadExtraInfo
+                0x0e00e9f4                RspGetCurThreadID
+                0x0e00eabc                RspGetThreadIdList
+                0x0e00d414                taDebugTaskActivate
+                0x0e00d3ec                taDebugGetStopCommandTag
+                0x0e00e3d4                RspSetBreakpoint
+                0x0e00e86c                RspBreakDebugProc
+                0x0e00df1c                RspWriteSingleRegister
+                0x0e00da20                RspWriteBinaryMemory
+                0x0e00d388                taDBInit
+                0x0e00f360                taGetMultiThreadInfoTag
+                0x0e00dd2c                RspReadBinaryMemory
+                0x0e00e90c                RspContinue
+                0x0e00f240                RspSetMultiThreadInfo
+                0x0e00e96c                RspStep
+                0x0e00eecc                RspThreadIsActive
+                0x0e00e650                RspRemoveBreakpoint
+                0x0e00d59c                RspWriteMemory
+                0x0e00d4a4                RspQueryEvent
+ .text          0x0e00f388      0x2d4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taMemProbeLib.o)
+                0x0e00f388                taMemProbeInit
+                0x0e00f4a0                taMemProbe
+                0x0e00f4f8                taMemTest
+                0x0e00f400                taMemCommonProbe
+ .text          0x0e00f65c      0xa4c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtomArch.o)
+                0x0e00febc                taDebugClrSoftStep
+                0x0e00f7c0                taDebugReadSingleRegister
+                0x0e00f65c                taDebugArchInit
+                0x0e00fa7c                taDebugContinue
+                0x0e00fab8                taDebugStep
+                0x0e00faec                taDebugJumpOverTrap
+                0x0e00f6e0                taDebugVector2Signal
+                0x0e00f8f8                taDebugWriteSingleRegister
+                0x0e00ff5c                taDebugSetSoftStep
+ .text          0x0e0100a8      0x290 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbHdBp.o)
+                0x0e0100a8                taDebugInsertHardBp
+                0x0e01023c                taDebugRemoveHardBp
+ .text          0x0e010338       0x58 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbMemProbeLib.o)
+                0x0e010338                taMemArchProbeInit
+                0x0e010360                taMemProbeSup
+ .text          0x0e010390      0x34c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taAgentEntry.o)
+                0x0e010390                taAgentEntry
+ .text          0x0e0106dc      0x2ec D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taCommand.o)
+                0x0e010874                taProcessCommand
+ .text          0x0e0109c8      0x18c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taPacketComm.o)
+                0x0e010a3c                taCOMMGetPkt
+                0x0e0109c8                taCOMMInit
+                0x0e010a88                taCOMMPutPkt
+                0x0e010ad4                taCOMMSendPacket
+ .text          0x0e010b54      0xec8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taPacketProtocol.o)
+                0x0e0119d8                TaPacketNumGet
+                0x0e010b54                taCheckSum
+                0x0e011958                taTreatyUDPInit
+ .text          0x0e011a1c      0x2a8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taProtocol.o)
+                0x0e011b34                taPutpkt
+                0x0e011aa0                taTreatyAdd
+                0x0e011bfc                taGetpkt
+ .text          0x0e011cc4      0x250 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taManager.o)
+                0x0e011d20                taManagerInit
+ .text          0x0e011f14      0x1c4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taMsgDispatch.o)
+                0x0e011f3c                taStopLoopDispatch
+                0x0e011fcc                taMessageDispatch
+                0x0e011f64                taInstallMsgProc
+                0x0e011f14                taStartLoopDispatch
+ .text          0x0e0120d8       0xc0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taArchInfo.o)
+                0x0e012138                taEndianInfoGet
+                0x0e0120d8                taArchInfoGet
+ .text          0x0e012198      0x120 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtomic.o)
+                0x0e01224c                _atomic_32_and
+                0x0e0121e8                _atomic_32_add
+                0x0e012200                _atomic_32_dec
+                0x0e01221c                _atomic_32_sub
+                0x0e01227c                _atomic_32_xor
+                0x0e0121b0                _atomic_32_set
+                0x0e012198                _atomic_32_clear
+                0x0e012234                _atomic_32_nand
+                0x0e0121c4                _atomic_32_get
+                0x0e012264                _atomic_32_or
+                0x0e0121cc                _atomic_32_inc
+                0x0e012294                _atomic_32_cas
+ .text          0x0e0122b8      0x1e4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDbgALib.o)
+                0x0e0122b8                taBpExceptionStub
+                0x0e012490                taTrap
+ .text          0x0e01249c      0xf30 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taUtils.o)
+                0x0e013144                hex2int64
+                0x0e012c98                mem2hex
+                0x0e01249c                __store_long
+                0x0e012868                __fetch_long
+                0x0e013034                hex2int
+                0x0e012d64                mem2hexEx
+                0x0e013284                hex2str
+                0x0e012e2c                hex2mem
+                0x0e012664                __store_short
+                0x0e012bc0                hex2num
+                0x0e012f0c                hex2memEx
+                0x0e012a10                __fetch_short
+ .text          0x0e0133cc       0x88 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugMode.o)
+                0x0e0133f4                taDebugModeSet
+                0x0e0133cc                taDebugModeGet
+ .text          0x0e013454       0xa4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taExceptionHandler.o)
+                0x0e013454                taExceptionHandler
+ .text          0x0e0134f8      0x188 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaExceptionLib.o)
+                0x0e0134f8                taSDAExceptionHandler
+ .text          0x0e013680      0x184 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtom.o)
+                0x0e0137c8                taDebugGetCurrentBpAddress
+                0x0e013680                taDebugReadAllRegisters
+                0x0e013728                taDebugWriteAllRegisters
+ .text          0x0e013804       0x54 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbArchLib.o)
+                0x0e013804                taAachExceptionHandler
+ .text          0x0e013858      0x198 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDR.o)
+                0x0e013890                taDebugSetAddressBreakpoint
+                0x0e013938                taDebugGetDARValue
+                0x0e013858                taDebugSetDataBreakpoint
+                0x0e0138c8                taDebugGetDataBreakpoint
+                0x0e013900                taDebugGetAddressBreakpoint
+                0x0e013970                taDebugHardBpIsFull
+ .text          0x0e0139f0       0x28 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDRAsm.o)
+                0x0e0139f8                taDebugSetIABR
+                0x0e013a08                taDebugGetIABR
+                0x0e0139f0                taDebugSetDABR
+                0x0e013a10                taDebugGetDAR
+                0x0e013a00                taDebugGetDABR
+ .text          0x0e013a18     0x4258 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o)
+                0x0e013ac4                fioformatstr
+                0x0e013a18                sprintf
+ .text          0x0e017c70     0x1b00 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(floatfuncs.o)
+                0x0e017c70                fformat
+ .text          0x0e019770      0x218 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memchr.o)
+                0x0e019770                memchr
+ .text          0x0e019988      0x208 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memcpy.o)
+                0x0e019988                memcpy
+ .text          0x0e019b90      0x1c8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memset.o)
+                0x0e019b90                memset
+ .text          0x0e019d58     0x12d8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(misc.o)
+                0x0e01ad90                fpTypeGet
+                0x0e019f60                expm1
+                0x0e01a988                logb
+                0x0e01a4f8                scaleb
+                0x0e01ab14                drem
+                0x0e01a40c                log__L
+                0x0e01aaa0                finite
+                0x0e01a8ac                copysign
+                0x0e019d58                exp__E
+ .text          0x0e01b030      0x228 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(modf.o)
+                0x0e01b030                modf
+ .text          0x0e01b258      0x560 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(printk.o)
+                0x0e01b78c                printkInit
+                0x0e01b3d8                printk
+ .text          0x0e01b7b8      0x1b8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strchr.o)
+                0x0e01b7b8                strchr
+ .text          0x0e01b970      0x160 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strcmp.o)
+                0x0e01b970                strcmp
+ .text          0x0e01bad0      0x13c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strcpy.o)
+                0x0e01bad0                strcpy
+ .text          0x0e01bc0c       0xec D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strlen.o)
+                0x0e01bc0c                strlen
+ .text          0x0e01bcf8      0x1c4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strncmp.o)
+                0x0e01bcf8                strncmp
+ .text          0x0e01bebc      0x354 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strtoi.o)
+                0x0e01bebc                strtoi
+ .text          0x0e01c210       0x48 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(bcopy.o)
+                0x0e01c210                bcopy
+ .text          0x0e01c258      0x2a8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memmove.o)
+                0x0e01c258                memmove
+ .text          0x0e01c500      0x47c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__divdi3.o)
+                0x0e01c500                __divdi3
+ .text          0x0e01c97c      0x4c4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__moddi3.o)
+                0x0e01c97c                __moddi3
+ .text          0x0e01ce40      0x47c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__udivdi3.o)
+                0x0e01ce40                __udivdi3
+ .text          0x0e01d2bc      0x47c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__umoddi3.o)
+                0x0e01d2bc                __umoddi3
+ *(.m_hdr)
+ *(.fixup)
+                0x0e01d738                __EH_FRAME_BEGIN__ = .
+ *(.eh_frame)
+ .eh_frame      0x0e01d738       0x34 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__divdi3.o)
+ .eh_frame      0x0e01d76c       0x24 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__moddi3.o)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0e01d790       0x20 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__udivdi3.o)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0e01d7b0       0x20 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__umoddi3.o)
+                                 0x34 (size before relaxing)
+ *(.gnu.linkonce.t*)
+                0x0e01d7d0                . = ALIGN (0x4)
+                0x0e01d7d0                ___CTOR_LIST__ = .
+                0x0e01d7d0                __CTOR_LIST__ = .
+                0x0e01d7d0        0x4 LONG 0xffffffff
+ *(.ctors)
+ *(.ctor)
+                0x0e01d7d4        0x4 LONG 0x0
+                0x0e01d7d8                __CTOR_END__ = .
+                0x0e01d7d8                ___DTOR_LIST__ = .
+                0x0e01d7d8                __DTOR_LIST__ = .
+                0x0e01d7d8        0x4 LONG 0xffffffff
+ *(.dtors)
+ *(.dtor)
+                0x0e01d7dc        0x4 LONG 0x0
+                0x0e01d7e0                __DTOR_END__ = .
+ *(.gnu.linkonce.r*)
+ *(.rodata)
+ .rodata        0x0e01d7e0      0x1db libtra.a(taInitConfig.o)
+ *fill*         0x0e01d9bb        0x1 00
+ .rodata        0x0e01d9bc        0xd libtra.a(ta_8569_uart.o)
+ *fill*         0x0e01d9c9        0x3 00
+ .rodata        0x0e01d9cc      0x5b7 libtra.a(uec.o)
+ *fill*         0x0e01df83        0x1 00
+ .rodata        0x0e01df84       0xed libtra.a(uec_phy.o)
+ *fill*         0x0e01e071        0x3 00
+ .rodata        0x0e01e074       0xa6 libtra.a(qe.o)
+ *fill*         0x0e01e11a        0x2 00
+ .rodata        0x0e01e11c      0x3a0 libtra.a(uccf.o)
+ .rodata        0x0e01e4bc        0xa D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taExceptionReport.o)
+ *fill*         0x0e01e4c6        0x2 00
+ .rodata        0x0e01e4c8       0xa9 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbStandardRsp.o)
+ *fill*         0x0e01e571        0x3 00
+ .rodata        0x0e01e574       0x80 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtomArch.o)
+ .rodata        0x0e01e5f4       0x28 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taManager.o)
+ .rodata        0x0e01e61c        0x8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taArchInfo.o)
+ .rodata        0x0e01e624       0x11 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taUtils.o)
+                0x0e01e624                taHexChars
+ *fill*         0x0e01e635        0x3 00
+ .rodata        0x0e01e638      0x194 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o)
+ *fill*         0x0e01e7cc        0x4 00
+ .rodata        0x0e01e7d0       0xe0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(floatfuncs.o)
+ .rodata        0x0e01e8b0       0x40 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(misc.o)
+ .rodata        0x0e01e8f0        0x8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(modf.o)
+ .rodata        0x0e01e8f8       0xe8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(printk.o)
+ *(.rodata*)
+ *(.jcr)
+ *(.init_begin)
+ *(.init)
+ *(.init_end)
+ *(.fini)
+ *(.gcc_except_table)
+                0x0e01f000                . = ALIGN (0x1000)
+ *fill*         0x0e01e9e0      0x620 00
+ *(.text.fast)
+ *(.text.init)
+                0x0e01f000                . = ALIGN (0x1000)
+                0x0e01f000                _code_end = .
+                0x0001f000                _code_size = SIZEOF (.text)
+
+.vectors1       0x0e01f000        0x0
+ .vectors1      0x0e01f000        0x0 libtra.a(taVectorFunc.o)
+
+.data           0x0e01f000     0x1000
+                0x0e01f000                .data_start = .
+                0x0e01f000                _data_start = .
+ *(.data)
+ .data          0x0e01f000        0x0 crt0.o
+ .data          0x0e01f000        0x0 libtra.a(board.o)
+ .data          0x0e01f000        0x0 libtra.a(taInit.o)
+ .data          0x0e01f000       0x14 libtra.a(taInitConfig.o)
+ .data          0x0e01f014        0x0 libtra.a(taOsIf.o)
+ .data          0x0e01f014        0x0 libtra.a(taPrintk.o)
+ .data          0x0e01f014        0x8 libtra.a(taUdpLib.o)
+ .data          0x0e01f01c        0x0 libtra.a(taVectorFunc.o)
+ .data          0x0e01f01c       0x20 libtra.a(ta_8569_uart.o)
+                0x0e01f01c                utDR_UartConfigTable
+ .data          0x0e01f03c        0x0 libtra.a(ta_net.o)
+ .data          0x0e01f03c       0xc8 libtra.a(uec.o)
+                0x0e01f03c                malloc_point
+                0x0e01f040                malloc_point_end
+ .data          0x0e01f104      0x154 libtra.a(uec_phy.o)
+ .data          0x0e01f258        0x0 libtra.a(taCpuLib.o)
+ .data          0x0e01f258        0x0 libtra.a(taVector.o)
+ .data          0x0e01f258        0x0 libtra.a(archLib.o)
+ .data          0x0e01f258       0x2e libtra.a(qe.o)
+ .data          0x0e01f286        0x0 libtra.a(uccf.o)
+ .data          0x0e01f286        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugInit.o)
+ .data          0x0e01f286        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDirectMemory.o)
+ .data          0x0e01f286        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taExceptionReport.o)
+ *fill*         0x0e01f286        0x2 00
+ .data          0x0e01f288        0x4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaCpuLib.o)
+ .data          0x0e01f28c        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o)
+ .data          0x0e01f28c        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbBreakpoint.o)
+ .data          0x0e01f28c        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbMemory.o)
+ .data          0x0e01f28c      0x10c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbStandardRsp.o)
+                0x0e01f290                taRSPCmdTable
+ .data          0x0e01f398        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taMemProbeLib.o)
+ .data          0x0e01f398        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtomArch.o)
+ .data          0x0e01f398        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbHdBp.o)
+ .data          0x0e01f398        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbMemProbeLib.o)
+ .data          0x0e01f398        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taAgentEntry.o)
+ .data          0x0e01f398        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taCommand.o)
+ .data          0x0e01f398        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taPacketComm.o)
+ .data          0x0e01f398       0x10 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taPacketProtocol.o)
+ .data          0x0e01f3a8        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taProtocol.o)
+ .data          0x0e01f3a8       0x3c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taManager.o)
+                0x0e01f3a8                taManagerCommandTable
+ .data          0x0e01f3e4        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taMsgDispatch.o)
+ .data          0x0e01f3e4        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taArchInfo.o)
+ .data          0x0e01f3e4        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtomic.o)
+ .data          0x0e01f3e4        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDbgALib.o)
+ .data          0x0e01f3e4        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taUtils.o)
+ .data          0x0e01f3e4        0x8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugMode.o)
+                0x0e01f3e4                taAvailModes
+ .data          0x0e01f3ec        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taExceptionHandler.o)
+ .data          0x0e01f3ec        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaExceptionLib.o)
+ .data          0x0e01f3ec        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtom.o)
+ .data          0x0e01f3ec        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbArchLib.o)
+ .data          0x0e01f3ec        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDR.o)
+ .data          0x0e01f3ec        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDRAsm.o)
+ .data          0x0e01f3ec       0x28 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o)
+                0x0e01f410                signofnum
+ .data          0x0e01f414        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(floatfuncs.o)
+ .data          0x0e01f414        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memchr.o)
+ .data          0x0e01f414        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memcpy.o)
+ .data          0x0e01f414        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memset.o)
+ *fill*         0x0e01f414        0x4 00
+ .data          0x0e01f418      0x148 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(misc.o)
+ .data          0x0e01f560        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(modf.o)
+ .data          0x0e01f560        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(printk.o)
+ .data          0x0e01f560        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strchr.o)
+ .data          0x0e01f560        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strcmp.o)
+ .data          0x0e01f560        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strcpy.o)
+ .data          0x0e01f560        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strlen.o)
+ .data          0x0e01f560        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strncmp.o)
+ .data          0x0e01f560        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strtoi.o)
+ .data          0x0e01f560        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(bcopy.o)
+ .data          0x0e01f560        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memmove.o)
+ .data          0x0e01f560        0x1 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__divdi3.o)
+                0x0e01f560                ___x_gnu__divdi3_o
+ .data          0x0e01f561        0x1 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__moddi3.o)
+                0x0e01f561                ___x_gnu__moddi3_o
+ .data          0x0e01f562        0x1 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__udivdi3.o)
+                0x0e01f562                ___x_gnu__udivdi3_o
+ .data          0x0e01f563        0x1 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__umoddi3.o)
+                0x0e01f563                ___x_gnu__umoddi3_o
+ *(.data.fast)
+ *(.gnu.linkonce.d*)
+ *(.gcc_except_table)
+ *(.data.rel.local)
+                0x0e01f564                __SDATA_START__ = .
+ *(.sdata)
+                0x0e01f564                __SDATA2_START__ = .
+ *(.sdata2)
+                0x0e01f564                __GOT_START__ = .
+ *(.got)
+                0x0e01f564                __GOT_END__ = .
+                0x0e01f564                __GOT2_START__ = .
+ *(.got2)
+                0x0e01f564                __GOT2_END__ = .
+ *(.flash*)
+ *(.wrs_build_vars)
+                0x0e01f564                __FIXUP_START__ = .
+                0x0e01f564                __FIXUP_END__ = .
+                0x0e01f564                __EXCEPT_START__ = .
+                0x0e01f564                __EXCEPT_END__ = .
+                0x0e020000                . = ALIGN (0x1000)
+ *fill*         0x0e01f564      0xa9c 00
+                0x0e020000                _data_end = .
+                0x00001000                _data_size = SIZEOF (.data)
+
+.bss            0x0e020000   0x814000
+                0x0e020000                .bss_start = .
+                0x0e020000                _bss_start = .
+ *(.bss)
+ .bss           0x0e020000        0x0 crt0.o
+ .bss           0x0e020000        0x0 libtra.a(board.o)
+ .bss           0x0e020000        0x0 libtra.a(taInit.o)
+ .bss           0x0e020000        0xc libtra.a(taInitConfig.o)
+ .bss           0x0e02000c       0x54 libtra.a(taOsIf.o)
+                0x0e02000c                taInitTaskId
+ .bss           0x0e020060        0x0 libtra.a(taPrintk.o)
+ .bss           0x0e020060      0xc1c libtra.a(taUdpLib.o)
+ .bss           0x0e020c7c        0x0 libtra.a(taVectorFunc.o)
+ .bss           0x0e020c7c        0x0 libtra.a(ta_8569_uart.o)
+ .bss           0x0e020c7c        0x0 libtra.a(ta_net.o)
+ *fill*         0x0e020c7c      0x384 00
+ .bss           0x0e021000   0x801024 libtra.a(uec.o)
+ .bss           0x0e822024        0x0 libtra.a(uec_phy.o)
+ .bss           0x0e822024        0x8 libtra.a(taCpuLib.o)
+                0x0e822028                mmPageDirBase
+                0x0e822024                taArchInitFlag
+ .bss           0x0e82202c        0x8 libtra.a(taVector.o)
+ .bss           0x0e822034        0x0 libtra.a(archLib.o)
+ .bss           0x0e822034      0x220 libtra.a(qe.o)
+                0x0e822034                qe_immr
+ .bss           0x0e822254        0x0 libtra.a(uccf.o)
+ .bss           0x0e822254        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugInit.o)
+ .bss           0x0e822254        0xc D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDirectMemory.o)
+ .bss           0x0e822260        0x8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taExceptionReport.o)
+ .bss           0x0e822268       0x1c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaCpuLib.o)
+                0x0e822274                sdaIpiInitialized
+ .bss           0x0e822284        0x4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o)
+                0x0e822284                taAltiVecInitFlag
+ .bss           0x0e822288     0x4658 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbBreakpoint.o)
+ .bss           0x0e8268e0        0xc D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbMemory.o)
+ .bss           0x0e8268ec     0x1448 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbStandardRsp.o)
+ .bss           0x0e827d34        0x4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taMemProbeLib.o)
+ .bss           0x0e827d38        0xc D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtomArch.o)
+                0x0e827d38                gSoftStepFlag
+ .bss           0x0e827d44        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbHdBp.o)
+ .bss           0x0e827d44        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbMemProbeLib.o)
+ .bss           0x0e827d44        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taAgentEntry.o)
+ .bss           0x0e827d44        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taCommand.o)
+ .bss           0x0e827d44        0x4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taPacketComm.o)
+ .bss           0x0e827d48       0x14 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taPacketProtocol.o)
+ .bss           0x0e827d5c        0x4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taProtocol.o)
+ .bss           0x0e827d60        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taManager.o)
+ .bss           0x0e827d60      0x82c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taMsgDispatch.o)
+ .bss           0x0e82858c        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taArchInfo.o)
+ .bss           0x0e82858c        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtomic.o)
+ .bss           0x0e82858c        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDbgALib.o)
+ .bss           0x0e82858c        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taUtils.o)
+ .bss           0x0e82858c        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugMode.o)
+ .bss           0x0e82858c        0x8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taExceptionHandler.o)
+                0x0e82858c                _func_taSysExceptionHandler
+                0x0e828590                _func_taTaskExceptionHandler
+ .bss           0x0e828594        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaExceptionLib.o)
+ .bss           0x0e828594        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtom.o)
+ .bss           0x0e828594        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbArchLib.o)
+ .bss           0x0e828594        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDR.o)
+ .bss           0x0e828594        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDRAsm.o)
+ .bss           0x0e828594      0x1a6 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o)
+ *fill*         0x0e82873a        0x2 00
+ .bss           0x0e82873c      0x134 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(floatfuncs.o)
+ .bss           0x0e828870        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memchr.o)
+ .bss           0x0e828870        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memcpy.o)
+ .bss           0x0e828870        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memset.o)
+ .bss           0x0e828870        0x8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(misc.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(modf.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(printk.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strchr.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strcmp.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strcpy.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strlen.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strncmp.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strtoi.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(bcopy.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memmove.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__divdi3.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__moddi3.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__udivdi3.o)
+ .bss           0x0e828878        0x0 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__umoddi3.o)
+ *(COMMON)
+ COMMON         0x0e828878     0x8000 libtra.a(board.o)
+                0x0e828878                _init_stack
+ *fill*         0x0e830878      0x788 00
+ COMMON         0x0e831000     0x2000 libtra.a(taVector.o)
+                0x0e831000                _Raw_Vector_table
+                0x0e831400                expTmpStack
+                0x0e832000                taExceptionStack
+ COMMON         0x0e833000       0x10 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaCpuLib.o)
+                0x0e833000                cpuThreadstatus
+ COMMON         0x0e833010      0x7ac D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o)
+                0x0e833010                taSDASmpExpContext
+                0x0e833360                taSDASessInfo
+ COMMON         0x0e8337bc      0x1a8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbStandardRsp.o)
+                0x0e8337bc                taGdbGetExpContext
+ *(.gnu.linkonce.b*)
+ *(.sbss)
+ .sbss          0x00000000        0x0 crt0.o
+ .sbss          0x0e833964        0x2 libtra.a(ta_8569_uart.o)
+                0x0e833964                com2_ier
+                0x0e833965                com1_ier
+ *fill*         0x0e833966        0x2 00
+ .sbss          0x0e833968       0x10 libtra.a(taVector.o)
+                0x0e833968                taExceptionStackSize
+                0x0e83396c                taExceptionStackTop
+                0x0e833970                exceptionTwiceFlag
+                0x0e833974                taExceptionStackBottom
+ .sbss          0x0e833978        0x4 libtra.a(qe.o)
+                0x0e833978                gd
+ .sbss          0x0e83397c        0x8 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o)
+                0x0e83397c                taSDAExpContext
+ .sbss          0x0e833984        0x4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtomArch.o)
+                0x0e833984                gSaveNextPC
+ .sbss          0x0e833988        0x4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaExceptionLib.o)
+                0x0e833988                stepThreadId
+ .sbss          0x0e83398c        0x4 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(printk.o)
+                0x0e83398c                outputChar
+                0x0e833990                __SBSS_END__ = .
+ *(.sbss2)
+                0x0e833990                __SBSS2_END__ = .
+                0x0e834000                . = ALIGN (0x1000)
+ *fill*         0x0e833990      0x670 00
+                0x0e834000                _bss_end = .
+                0x00814000                _bss_size = SIZEOF (.bss)
+                0x00000000                load__code_start = 0x0
+                0x0001f000                load__data_start = (((load__code_start + _code_size) + 0xfff) & 0xfffff000)
+                0x00020000                load__bss_start = (((load__data_start + _data_size) + 0xfff) & 0xfffff000)
+
+.rela.dyn       0x0e834000        0x0
+ .rela.text     0x00000000        0x0 crt0.o
+ .rela.data     0x00000000        0x0 crt0.o
+LOAD crt0.o
+START GROUP
+LOAD libtra.a
+LOAD D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a
+LOAD D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a
+LOAD D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a
+END GROUP
+OUTPUT(../tra.elf elf32-powerpc-vxworks)
+
+.comment        0x00000000      0xcde
+ .comment       0x00000000       0x36 libtra.a(board.o)
+ .comment       0x00000036       0x36 libtra.a(taInit.o)
+ .comment       0x0000006c       0x36 libtra.a(taInitConfig.o)
+ .comment       0x000000a2       0x36 libtra.a(taOsIf.o)
+ .comment       0x000000d8       0x36 libtra.a(taPrintk.o)
+ .comment       0x0000010e       0x36 libtra.a(taUdpLib.o)
+ .comment       0x00000144       0x36 libtra.a(ta_8569_uart.o)
+ .comment       0x0000017a       0x36 libtra.a(ta_net.o)
+ .comment       0x000001b0       0x36 libtra.a(uec.o)
+ .comment       0x000001e6       0x36 libtra.a(uec_phy.o)
+ .comment       0x0000021c       0x36 libtra.a(taCpuLib.o)
+ .comment       0x00000252       0x36 libtra.a(taVector.o)
+ .comment       0x00000288       0x36 libtra.a(qe.o)
+ .comment       0x000002be       0x36 libtra.a(uccf.o)
+ .comment       0x000002f4       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugInit.o)
+ .comment       0x0000032a       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDirectMemory.o)
+ .comment       0x00000360       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taExceptionReport.o)
+ .comment       0x00000396       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaCpuLib.o)
+ .comment       0x000003cc       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaMain.o)
+ .comment       0x00000402       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbBreakpoint.o)
+ .comment       0x00000438       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbMemory.o)
+ .comment       0x0000046e       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbStandardRsp.o)
+ .comment       0x000004a4       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taMemProbeLib.o)
+ .comment       0x000004da       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtomArch.o)
+ .comment       0x00000510       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbHdBp.o)
+ .comment       0x00000546       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbMemProbeLib.o)
+ .comment       0x0000057c       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taAgentEntry.o)
+ .comment       0x000005b2       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taCommand.o)
+ .comment       0x000005e8       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taPacketComm.o)
+ .comment       0x0000061e       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taPacketProtocol.o)
+ .comment       0x00000654       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taProtocol.o)
+ .comment       0x0000068a       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taManager.o)
+ .comment       0x000006c0       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taMsgDispatch.o)
+ .comment       0x000006f6       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taArchInfo.o)
+ .comment       0x0000072c       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taUtils.o)
+ .comment       0x00000762       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taDebugMode.o)
+ .comment       0x00000798       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(taExceptionHandler.o)
+ .comment       0x000007ce       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(sdaExceptionLib.o)
+ .comment       0x00000804       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbAtom.o)
+ .comment       0x0000083a       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbArchLib.o)
+ .comment       0x00000870       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libkda.a(dbDR.o)
+ .comment       0x000008a6       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o)
+ .comment       0x000008dc       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(floatfuncs.o)
+ .comment       0x00000912       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memchr.o)
+ .comment       0x00000948       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memcpy.o)
+ .comment       0x0000097e       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memset.o)
+ .comment       0x000009b4       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(misc.o)
+ .comment       0x000009ea       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(modf.o)
+ .comment       0x00000a20       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(printk.o)
+ .comment       0x00000a56       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strchr.o)
+ .comment       0x00000a8c       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strcmp.o)
+ .comment       0x00000ac2       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strcpy.o)
+ .comment       0x00000af8       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strlen.o)
+ .comment       0x00000b2e       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strncmp.o)
+ .comment       0x00000b64       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(strtoi.o)
+ .comment       0x00000b9a       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(bcopy.o)
+ .comment       0x00000bd0       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(memmove.o)
+ .comment       0x00000c06       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__divdi3.o)
+ .comment       0x00000c3c       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__moddi3.o)
+ .comment       0x00000c72       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__udivdi3.o)
+ .comment       0x00000ca8       0x36 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__umoddi3.o)
+
+.PPC.EMB.apuinfo
+                0x00000000       0x20
+ .PPC.EMB.apuinfo
+                0x00000000       0x18 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(fiofuncs.o)
+ .PPC.EMB.apuinfo
+                0x00000018       0x1c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(floatfuncs.o)
+ .PPC.EMB.apuinfo
+                0x00000034       0x1c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(misc.o)
+ .PPC.EMB.apuinfo
+                0x00000050       0x1c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libtautil.a(modf.o)
+ .PPC.EMB.apuinfo
+                0x0000006c       0x18 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__moddi3.o)
+ .PPC.EMB.apuinfo
+                0x00000084       0x18 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__umoddi3.o)
+
+.debug_frame    0x00000000       0xbc
+ .debug_frame   0x00000000       0x30 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__divdi3.o)
+ .debug_frame   0x00000030       0x34 D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__moddi3.o)
+ .debug_frame   0x00000064       0x2c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__udivdi3.o)
+ .debug_frame   0x00000090       0x2c D:/platform_ppc/target/deltaos/lib/ppc/8569/big\libgcc.a(_x_gnu__umoddi3.o)

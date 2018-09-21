@@ -1,0 +1,11 @@
+../tra.elf  :
+section                size        addr
+.text               0x1f000   0xe000000
+.data                0x1000   0xe01f000
+.bss               0x814000   0xe020000
+.comment              0xcde         0x0
+.PPC.EMB.apuinfo       0x20         0x0
+.debug_frame           0xbc         0x0
+Total              0x834dba
+
+

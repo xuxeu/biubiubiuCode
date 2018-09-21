@@ -1,0 +1,143 @@
+
+ENTRY(_start)
+
+MEMORY 
+{
+ram	:	ORIGIN = 0x00000000,	LENGTH = 0x00400000
+boot_rom	:	ORIGIN = 0xff800000,	LENGTH = 0x00200000
+}
+
+SECTIONS	{
+
+.vector	((0x00000000 + (0x00000004-1))& ~ (0x00000004-1))	:	AT((0xff800000 + (0x00000004-1))& ~ (0x00000004-1))
+{
+".vector_start" = .;
+_vectors_start = .;
+
+*(.vectors);
+ . = ALIGN(16);
+_vectors_end = .;
+}	>ram
+_vectors_size = 0x00004000;
+_text_start = 0x00200000;
+.text	(("_text_start" + 0x00004000 + (0x00000002-1))& ~ (0x00000002-1))	:	AT((0xff870000 + (0x00000002-1))& ~ (0x00000002-1))
+{
+".text_start" = .;
+_code_start = .;
+
+CREATE_OBJECT_SYMBOLS *( .text ) ;
+      *(.m_hdr) ;
+      __EH_FRAME_BEGIN__ = .;
+      *(.eh_frame) ;
+      *(.gnu.linkonce.t*) ;
+      . = ALIGN(4);
+      ___CTOR_LIST__ = .;
+      __CTOR_LIST__ = .;
+      LONG (-1);
+      *(.ctors);
+      *(.ctor);
+      LONG (0);
+      __CTOR_END__ = .;
+      ___DTOR_LIST__ = .;
+      __DTOR_LIST__ = .;
+      LONG (-1);
+      *(.dtors);
+      *(.dtor);
+      LONG (0);
+      __DTOR_END__ = .;
+      *(.gnu.linkonce.r*);
+      *(.glue_7) ;
+       *(.glue_7t);
+      *(.rodata);
+      *(.rodata.*);
+      *(.init);
+      *(.jcr);
+      *(.data.rel.local);
+      *(.fini);
+      *(.got*);
+      *(.fixup);
+      *(.interface);
+      . = ALIGN(16);
+     ;
+_code_end = .;
+}	>ram
+_code_size = SIZEOF(.text);
+
+.data	((".text_start" + "_code_size" + (0x00000004-1))& ~ (0x00000004-1))	:	AT((0xff804000 + (0x00000004-1))& ~ (0x00000004-1))
+{
+".data_start" = .;
+_data_start = .;
+
+*(.data);
+ *(.gnu.linkonce.d*);
+ *(.sdata*);
+ *(.flash*);
+ *(.gcc_except_table);
+ . = ALIGN(16);
+_data_end = .;
+}	>ram
+_data_size = SIZEOF(.data);
+
+.bss   ((".data_start" + "_data_size" + (0x00000004-1))& ~ (0x00000004-1))	:
+{
+".bss_start" = .;
+_bss_start = .;
+
+*(.bss);
+ *(COMMON);
+ *(.sbss);
+ . = ALIGN(16);
+_bss_end = .;
+}	>ram
+_bss_size = SIZEOF(.bss);
+
+_crtl_heap_start =( 0x00100000 + (0x00000004-1))& ~ (0x00000004-1);
+
+_crtl_heap_end =( 0x00100000 + 0x00200000 + (0x00000004-1))& ~ (0x00000004-1);
+
+_crtl_heap_size = 0x00200000;
+
+_hashTable_start =( 0x00300000 + (0x00000004-1))& ~ (0x00000004-1);
+
+_hashTable_end =( 0x00300000 + 0x00040000 + (0x00000004-1))& ~ (0x00000004-1);
+
+_hashTable_size = 0x00040000;
+
+_rom_vectors_start = ((0xff800000 + (0x00000004-1))& ~ (0x00000004-1));
+_rom_vectors_end = ((0xff800000 + 0x00004000 + (0x00000004-1))& ~ (0x00000004-1));
+
+_rom_data_start = ((0xff804000 + (0x00000004-1))& ~ (0x00000004-1));
+_rom_data_end = ((0xff804000 + "_data_size" + (0x00000004-1))& ~ (0x00000004-1));
+
+_rom_code_start = ((0xff870000 + (0x00000002-1))& ~ (0x00000002-1));
+_rom_code_end = ((0xff870000 + "_code_size" + (0x00000002-1))& ~ (0x00000002-1));
+
+.start   ((0xff870000 + "_code_size" + (0x00000004-1))& ~ (0x00000004-1))	:
+{
+".start_start" = .;
+_start_start = .;
+
+*(.start);
+ . = ALIGN(16);
+_start_end = .;
+}	>boot_rom
+_start_size = SIZEOF(.start);
+
+.osromvector   ((".start_start" + "_start_size" + (0x00000004-1))& ~ (0x00000004-1))	:
+{
+".osromvector_start" = .;
+_osromvector_start = .;
+
+   *(.osvectors);
+  . = ALIGN(16);
+ ;
+_osromvector_end = .;
+}	>boot_rom
+_osromvector_size = SIZEOF(.osromvector);
+
+
+}
+
+load__code_start =( 0x00000002-1 )&~(0x00000002 -1 );
+load__data_start =( load__code_start + _code_size + ( 0x00000004 -1 ))&~(0x00000004 -1 );
+load__bss_start =( load__data_start + _data_size + ( 0x00000004 -1 ))&~(0x00000004 -1 );

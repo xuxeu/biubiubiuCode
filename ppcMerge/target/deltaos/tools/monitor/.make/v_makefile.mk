@@ -1,0 +1,14 @@
+PROJECT_PATH:=D:/platform_ppc/target/deltaos/tools/monitor
+CONFIG_PATH:=$(PROJECT_PATH)/.make/PowerPC_8569_722s
+TOOLS_VERSION:=x86-win32
+BIN_PATH:=D:/platform_ppc/host/bin
+RTOS_PATH:=D:/platform_ppc/target/deltaos
+PLATFORM:=D:/platform_ppc
+CONFIG_ARCH:=ppc
+CONFIG_TRA:=bin
+ARCH:=ppc
+CONFIG_SUB_ARCH:=8569
+CONFIG_CPU_ENDIAN:=big
+RTOS:=deltaos
+TOOLS_CHAIN_PATH:=$(PLATFORM)/host/gnu
+TARGT_BOARD:=PowerPC_8569_722s
