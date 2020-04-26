@@ -773,12 +773,10 @@ static T_TA_ReturnCode CallModuleFunc(T_DB_Info* debugInfo,
     {
     	status = mdlCreateTask(&mdlCreateDesc);
     }
-#if 0
     else if (MDL_CRT_RTP == mdlCreateDesc.contextType)
     {
     	status = mdlCreateRtp(&mdlCreateDesc,&textStart);
     }
-#endif
     else
     {
     	*outSize = (UINT32)sprintf((INT8*)outbuf, "E%d",TA_INVALID_INPUT);

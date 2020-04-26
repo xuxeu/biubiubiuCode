@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project label="[Static Library Project][Vxworks 6.8]">
+<projectType>library</projectType>
+<frame></frame>
+<nature></nature>
+<adaptVersion>6.8</adaptVersion>
+<configurations>
+<configuration name="x86Gnu4.12le">
+<arch value="x86"/>
+<isSetOutput value="N"/>
+<outputPath value="D:/java/lambda/plantform/target/deltaos/lib/x86/pentium/little"/>
+</configuration>
+</configurations>
+</project>

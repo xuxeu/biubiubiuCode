@@ -507,7 +507,6 @@ INT32 mdlCreateTask(MDL_CREATE_DESC *pCtxCreate)
     }
 }
 
-#if 0
 /*
  * @brief
  *    创建任务执行RTP
@@ -544,7 +543,5 @@ INT32 mdlCreateRtp(MDL_CREATE_DESC *pCtxCreate, UINT32 *textStart)
 
     /* 设置代码段起始地址 */
     *textStart = (UINT32)((WIND_RTP *)rtpId)->binaryInfo.textStart;
-
     return ((INT32)rtpId);
 }
-#endif

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project label="[User Define Project]">
+<osType>deltaos6.0</osType>
+<projectType>customize</projectType>
+<frame></frame>
+<nature></nature>
+<adaptVersion>6.8</adaptVersion>
+<configurations>
+<configuration name="ppcGnu4.12_P2020">
+<arch value="ppc"/>
+<isSetOutput value="N"/>
+<outputPath value="G:/203/tonghuanide/platform/deltaos6.0/target/lib/gnu4.1.2/ppc/p2020/big"/>
+<isLp64 value="N"/>
+<cpu value="p2020"/>
+<toolChain value="4.1.2"/>
+</configuration>
+</configurations>
+</project>

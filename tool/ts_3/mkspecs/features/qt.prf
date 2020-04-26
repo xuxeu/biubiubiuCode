@@ -1,0 +1,115 @@
+CONFIG *= moc thread
+
+#handle defines
+win32 {
+   shared:DEFINES += QT_DLL
+   !contains(DEFINES, QT_NODLL) {
+      QT_ENV_DLL = $$(QT_DLL)
+      QT_ENV_NO_DLL = $$(QT_NODLL)
+      !isEmpty(QT_ENV_DLL):isEmpty(QT_ENV_NO_DLL):DEFINES += QT_DLL
+      contains(DEFINES, QT_MAKEDLL)|contains(DEFINES, QT_DLL):QMAKE_QT_DLL = 1
+   }
+}
+CONFIG(release, debug|release):DEFINES += QT_NO_DEBUG
+no_keywords:DEFINES += QT_NO_KEYWORDS
+plugin { #Qt plugins
+   static:DEFINES += QT_STATICPLUGIN
+   DEFINES += QT_PLUGIN
+}
+
+#handle includes
+INCLUDEPATH = $$QMAKE_INCDIR_QT $$INCLUDEPATH #prepending prevents us from picking up "stale" includes
+win32:INCLUDEPATH += $$QMAKE_INCDIR_QT/ActiveQt
+
+#specific module settings
+!isEmpty(QT_BUILD_TREE):QMAKE_LIBDIR += $$QT_BUILD_TREE/lib
+QMAKE_LIBDIR += $$QMAKE_LIBDIR_QT
+for(QTLIB, $$list($$lower($$unique(QT)))) {
+   qlib_style = 
+   false:contains(QTLIB, ".*_debug$") {
+      qlib_style = debug
+      QTLIB ~= s,_debug$,,g
+   } else:false:contains(QTLIB, ".*_release$") {
+      qlib_style = release
+      QTLIB ~= s,_release$,,g
+   } else:!qt_debug:!qt_release {
+      CONFIG(debug, debug|release):qlib_style = debug
+      else:qlib_style = release
+   } else:CONFIG(qt_debug, qt_debug|qt_release) {
+      qlib_style = debug
+   } else {
+      qlib_style = release
+   }
+
+   qlib =
+   isEqual(QTLIB, gui):qlib = QtGui
+   else:isEqual(QTLIB, network):qlib = QtNetwork
+   else:isEqual(QTLIB, xml):qlib = QtXml
+   else:isEqual(QTLIB, opengl):qlib = QtOpenGL
+   else:isEqual(QTLIB, sql):qlib = QtSql
+   else:isEqual(QTLIB, core):qlib = QtCore
+   else:isEqual(QTLIB, canvas):qlib = QtCanvas
+   else:isEqual(QTLIB, qt3support):qlib = Qt3Support
+   else:message("Unknown QT: $$QTLIB"):qlib =
+   !isEmpty(qlib) {
+      target_qt:isEqual(TARGET, qlib) {
+         warning($$TARGET cannot have a QT of $$QTLIB)
+      } else {
+         DEFINES *= $$upper(QT_$${QTLIB}_LIB)
+	 exists($$QMAKE_INCDIR_QT/$$qlib) {
+             INCLUDEPATH -= $$QMAKE_INCDIR_QT/$$qlib
+             INCLUDEPATH = $$QMAKE_INCDIR_QT/$$qlib $$INCLUDEPATH
+         }
+	 isEqual(QTLIB, opengl):CONFIG += opengl
+	 isEqual(QTLIB, qt3support):DEFINES *= QT3_SUPPORT
+
+	 QT_LINKAGE =
+	 mac {
+	    CONFIG(qt_framework, qt_framework|qt_no_framework) { #forced
+	       QMAKE_CFLAGS *= -F$${QMAKE_LIBDIR_QT}
+	       QMAKE_CXXFLAGS *= -F$${QMAKE_LIBDIR_QT}
+	       QMAKE_LIBDIR_FLAGS *= -F$${QMAKE_LIBDIR_QT}
+	       FRAMEWORK_INCLUDE = $$QMAKE_LIBDIR_QT/$${qlib}.framework/Headers
+	       !qt_no_framework_direct_includes:exists($$FRAMEWORK_INCLUDE) {
+	          INCLUDEPATH -= $$FRAMEWORK_INCLUDE
+	          INCLUDEPATH = $$FRAMEWORK_INCLUDE $$INCLUDEPATH
+               }
+	       QT_LINKAGE = -framework $${qlib}
+            } else:!qt_no_framework { #detection
+  	       for(frmwrk_dir, $$list($$QMAKE_LIBDIR $$(DYLD_FRAMEWORK_PATH) /Library/Frameworks)) {
+	          exists($${frmwrk_dir}/$${qlib}.framework) {
+	            QMAKE_CFLAGS *= -F$${frmwrk_dir}
+	            QMAKE_CXXFLAGS *= -F$${frmwrk_dir}
+	            QMAKE_LIBDIR_FLAGS *= -F$${frmwrk_dir}
+	            FRAMEWORK_INCLUDE = $$frmwrk_dir/$${qlib}.framework/Headers
+	            !qt_no_framework_direct_includes:exists($$FRAMEWORK_INCLUDE) {
+	               INCLUDEPATH -= $$FRAMEWORK_INCLUDE
+	               INCLUDEPATH = $$FRAMEWORK_INCLUDE $$INCLUDEPATH
+                    }
+		    QT_LINKAGE = -framework $${qlib}
+		    break()
+                  }
+               }
+            }
+	 }
+	 false {
+	    QT_LINKAGE = -l$${qlib}
+	 } else:isEmpty(QT_LINKAGE) {
+            win32 {
+	       CONFIG(debug, debug|release):QT_LINKAGE = -l$${qlib}d
+	       else:QT_LINKAGE = -l$${qlib}
+	    } else { 
+	       isEqual(qlib_style, debug):QT_LINKAGE = -l$${qlib}_debug
+	       else:QT_LINKAGE = -l$${qlib}
+            }
+         }
+	 LIBS += $$QT_LINKAGE
+      }
+   }
+}
+
+qt_compat {
+   !qt_compat_no_warning:QTDIR_build:warning(***USE of COMPAT inside of QTDIR!**) #just for us
+   INCLUDEPATH *= $$QMAKE_INCDIR_QT/Qt
+   DEFINES *= QT_COMPAT
+}
